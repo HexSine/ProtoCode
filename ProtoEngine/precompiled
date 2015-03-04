@@ -1,0 +1,11 @@
+#ifndef PRECOMPILED_INCLUDED
+#define PRECOMPILED_INCLUDED
+
+// File: precompiled.h
+// Description: A Precompiled Header
+// Copywrite: Nathan Boyes 01/03/2015
+
+#include "common.h"
+
+
+#endif // PRECOMPILED_INCLUDED

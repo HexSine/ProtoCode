@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProtoEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProtoEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProtoEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-Winvalid-pch" />
+			<Add option='-include &quot;precompiled.h&quot;' />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lglu32 -lglew32 -lglew32mx" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+		</Linker>
+		<Unit filename="Data/Shaders/DefaultVertexShader.glsl" />
+		<Unit filename="GraphicsSystem.h" />
+		<Unit filename="include/ProtoEngine/GraphicsSystem.h" />
+		<Unit filename="include/ProtoEngine/Math/Mathf" />
+		<Unit filename="include/ProtoEngine/application.h" />
+		<Unit filename="include/ProtoEngine/proto_common.h" />
+		<Unit filename="include/ProtoEngine/proto_core.h" />
+		<Unit filename="precompiled.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="src/GraphicsSystem.cpp" />
+		<Unit filename="src/application.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

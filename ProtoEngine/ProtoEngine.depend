@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1425262647 source:c:\protoengine\main.c
+	"precompiled.h"
+	<windows.h>
+	<gl/gl.h>
+
+1425261985 source:c:\protoengine\precompiled.h
+	"common.h"
+
+1425289787 c:\protoengine\common.h
+	<windows.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+
+1425261985 c:\protoengine\precompiled.h
+	"common.h"
+
+1425274810 source:c:\protoengine\src\application.cpp
+	"../precompiled.h"
+	"application.h"
+
+1425281179 c:\protoengine\include\application.h
+
+1425290185 source:c:\protoengine\main.cpp
+	"precompiled.h"
+	<windows.h>
+	<gl/gl.h>
+	"application.h"
+
+1425277687 c:\protoengine\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1425283324 source:c:\protoengine\src\graphicssystem.cpp
+	"../precompiled.h"
+	"GraphicsSystem.h"
+
+1425276982 c:\protoengine\include\graphicssystem.h
+
+1425277688 c:\protoengine\include\gl\wglew.h
+	<windows.h>
+
+1425357367 source:c:\protocode\protoengine\precompiled.h
+	"ProtoEngine/proto_common.h"
+
+1425289787 c:\protocode\protoengine\common.h
+	<windows.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+
+1425277687 c:\protocode\protoengine\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1425277688 c:\protocode\protoengine\include\gl\wglew.h
+	<windows.h>
+
+1425359324 source:c:\protocode\protoengine\src\application.cpp
+	"../precompiled.h"
+	"ProtoEngine/application.h"
+
+1425357367 c:\protocode\protoengine\precompiled.h
+	"ProtoEngine/proto_common.h"
+
+1425281179 c:\protocode\protoengine\include\application.h
+
+1425359239 source:c:\protocode\protoengine\src\graphicssystem.cpp
+	"../precompiled.h"
+	"ProtoEngine/GraphicsSystem.h"
+
+1425276982 c:\protocode\protoengine\include\graphicssystem.h
+
+1425291532 source:c:\protocode\protoengine\main.cpp
+	"precompiled.h"
+	<windows.h>
+	<gl/gl.h>
+	"application.h"
+
+1425358143 c:\protocode\protoengine\include\protoengine\application.h
+
+1425276982 c:\protocode\protoengine\include\protoengine\graphicssystem.h
+
+1425289787 source:c:\protocode\protoengine\common.h
+	<windows.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+
+1425281179 source:c:\protocode\protoengine\include\protoengine\application.h
+
+1425276982 source:c:\protocode\protoengine\include\protoengine\graphicssystem.h
+
+1425359276 c:\protocode\protoengine\include\protoengine\proto_common.h
+	<windows.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<stdio.h>
+	"ProtoEngine/proto_core.h"
+
+1425281179 c:\protocode\protoengine\application.h
+
+1425357507 c:\protocode\protoengine\graphicssystem.h
+
+1425356618 c:\protocode\protoengine\include\protoengine\proto_core.h
+	<windows.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+

@@ -1,0 +1,49 @@
+{ "height":4,
+ "layers":[
+        {
+         "data":[1, 1, 1, 1, 1, 1, 1, 1],
+         "height":4,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":2,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "renderorder":"right-down",
+ "tileheight":32,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "margin":0,
+         "name":"tileset",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tiles":
+            {
+             "0":
+                {
+                 "image":"..\/Textures\/Map\/block_tile.png"
+                },
+             "1":
+                {
+                 "image":"..\/Textures\/Map\/BackGround\/background.png"
+                }
+            },
+         "tilewidth":32
+        }],
+ "tilewidth":32,
+ "version":1,
+ "width":2
+}

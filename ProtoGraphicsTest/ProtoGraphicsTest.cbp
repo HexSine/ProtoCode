@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProtoGraphicsTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProtoGraphicsTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../ProtoGraphicsLib/bin/Debug" />
+					<Add directory="../BatKernel/bin/Debug" />
+					<Add directory="../ProtoEngine/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProtoGraphicsTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="../ProtoEngine/include" />
+			<Add directory="../ProtoGraphicsLib/include/" />
+			<Add directory="../BatKernel/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows -lmingw32" />
+			<Add option="-lProtoGraphicsLib -lProtoEngine -lBatKernel" />
+			<Add option="-lglu32 -lgdi32" />
+			<Add option="-lglew32 -lglfw3" />
+			<Add option="-lSOIL" />
+			<Add option="-lopengl32" />
+		</Linker>
+		<Unit filename="Data/Shaders/DefaultFragmentShader.glsl" />
+		<Unit filename="Data/Shaders/DefaultProgram.glsl" />
+		<Unit filename="Data/Shaders/DefaultVertexShader.glsl" />
+		<Unit filename="Data/Shaders/TexturedFragmentShader.glsl" />
+		<Unit filename="Data/Shaders/TexturedProgram.glsl" />
+		<Unit filename="Data/Shaders/TexturedVertexShader.glsl" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

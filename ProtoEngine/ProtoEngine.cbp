@@ -13,18 +13,18 @@
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
-					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ProtoEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
 				<Option object_output="obj/Release/" />
-				<Option type="0" />
+				<Option type="2" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -35,27 +35,39 @@
 			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-Winvalid-pch" />
-			<Add option='-include &quot;precompiled.h&quot;' />
+			<Add option='-include &quot;ProtoEngine/precompiled.h&quot;' />
+			<Add option="-D__NO_INLINE__" />
+			<Add directory="include/" />
+			<Add directory="../BatKernel/include" />
+			<Add directory="../ProtoGraphicsLib/include/" />
+			<Add directory="../BatInputLib/include" />
 		</Compiler>
 		<Linker>
-			<Add option="-lmingw32 -lglu32 -lglew32 -lglew32mx" />
-			<Add library="opengl32" />
-			<Add library="glu32" />
-			<Add library="gdi32" />
+			<Add option="-mwindows -lmingw32  -lglew32 -lglfw3 -lglu32 -lgdi32 -lopengl32" />
 		</Linker>
-		<Unit filename="Data/Shaders/DefaultVertexShader.glsl" />
-		<Unit filename="GraphicsSystem.h" />
-		<Unit filename="include/ProtoEngine/GraphicsSystem.h" />
-		<Unit filename="include/ProtoEngine/Math/Mathf" />
+		<Unit filename="include/ProtoEngine/ProtoEngine.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="include/ProtoEngine/Scene/scene.h" />
+		<Unit filename="include/ProtoEngine/Scene/scenenode.h" />
 		<Unit filename="include/ProtoEngine/application.h" />
-		<Unit filename="include/ProtoEngine/proto_common.h" />
-		<Unit filename="include/ProtoEngine/proto_core.h" />
-		<Unit filename="precompiled.h">
+		<Unit filename="include/ProtoEngine/basestate.h" />
+		<Unit filename="include/ProtoEngine/entity.h" />
+		<Unit filename="include/ProtoEngine/gamecontext.h" />
+		<Unit filename="include/ProtoEngine/precompiled.h">
 			<Option compile="1" />
 			<Option weight="0" />
 		</Unit>
-		<Unit filename="src/GraphicsSystem.cpp" />
+		<Unit filename="include/ProtoEngine/proto_common.h" />
+		<Unit filename="include/ProtoEngine/proto_core.h" />
+		<Unit filename="include/ProtoEngine/transform.h" />
+		<Unit filename="src/Scene/scene.cpp" />
+		<Unit filename="src/Scene/scenenode.cpp" />
 		<Unit filename="src/application.cpp" />
+		<Unit filename="src/basestate.cpp" />
+		<Unit filename="src/entity.cpp" />
+		<Unit filename="src/gamecontext.cpp" />
+		<Unit filename="src/transform.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

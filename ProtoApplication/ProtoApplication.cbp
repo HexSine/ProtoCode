@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProtoApplication" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProtoApplication" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wnon-virtual-dtor" />
+					<Add option="-Wshadow" />
+					<Add option="-Wcast-align" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="../ProtoEngine/include/ProtoEngine" />
+					<Add directory="../ProtoEngine/include" />
+					<Add directory="include" />
+					<Add directory="include/Entities" />
+					<Add directory="include/ProtoEngine/Graphics" />
+					<Add directory="include/Entities/FrontEnd" />
+					<Add directory="include/Entities/Characters" />
+					<Add directory="include/Input" />
+					<Add directory="include/Entities/Projectiles" />
+					<Add directory="include/Entities/Map/" />
+					<Add directory="include/Entities/Map" />
+					<Add directory="include/Entities/" />
+					<Add directory="include/Map/Loader" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProtoApplication" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-D__NO_INLINE__" />
+					<Add directory="../ProtoEngine/include" />
+					<Add directory="include" />
+					<Add directory="include/Entities" />
+					<Add directory="include/ProtoEngine/Graphics" />
+					<Add directory="include/Entities/FrontEnd" />
+					<Add directory="include/Entities/Characters" />
+					<Add directory="include/Input" />
+					<Add directory="include/Entities/Projectiles" />
+					<Add directory="include/Entities/Map/" />
+					<Add directory="include/Entities/Map" />
+					<Add directory="include/Entities/" />
+					<Add directory="include/Map/Loader" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows -lmingw32" />
+			<Add option="-lProtoEngine" />
+			<Add option="-lglu32 -lgdi32" />
+			<Add option="-lglew32 -lglfw3" />
+			<Add option="-lSOIL" />
+			<Add option="-lopengl32" />
+			<Add directory="../ProtoEngine/bin/Debug" />
+		</Linker>
+		<Unit filename="Data/Maps/TestMap.json" />
+		<Unit filename="Data/Maps/TestMap2.json" />
+		<Unit filename="DefaultFragmentShader.glsl" />
+		<Unit filename="DefaultVertexShader.glsl" />
+		<Unit filename="SolidColorFragmentShader.glsl" />
+		<Unit filename="SolidColorVertexShader.glsl" />
+		<Unit filename="TexturedFragmentShader.glsl" />
+		<Unit filename="TexturedVertexShader.glsl" />
+		<Unit filename="include/Entities/Characters/archer.h" />
+		<Unit filename="include/Entities/Characters/character.h" />
+		<Unit filename="include/Entities/Characters/knight.h" />
+		<Unit filename="include/Entities/FrontEnd/menuitem.h" />
+		<Unit filename="include/Entities/Map/background.h" />
+		<Unit filename="include/Entities/Map/tile_box.h" />
+		<Unit filename="include/Entities/Projectiles/projectile.h" />
+		<Unit filename="include/Entities/map.h" />
+		<Unit filename="include/Entities/ship.h" />
+		<Unit filename="include/Input/inputkeys.h" />
+		<Unit filename="include/Map/Loader/jsonmaploader.h" />
+		<Unit filename="include/State/BaseState.h" />
+		<Unit filename="include/State/FrontEnd.h" />
+		<Unit filename="include/State/GameContext.h" />
+		<Unit filename="include/State/GamePlay.h" />
+		<Unit filename="include/State/GameStates.h" />
+		<Unit filename="include/precompiled.h" />
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/BaseState.cpp" />
+		<Unit filename="src/Entities/Characters/archer.cpp" />
+		<Unit filename="src/Entities/Characters/character.cpp" />
+		<Unit filename="src/Entities/Characters/knight.cpp" />
+		<Unit filename="src/Entities/FrontEnd/menuitem.cpp" />
+		<Unit filename="src/Entities/Map/background.cpp" />
+		<Unit filename="src/Entities/Map/map.cpp" />
+		<Unit filename="src/Entities/Map/tile_box.cpp" />
+		<Unit filename="src/Entities/Projectiles/projectile.cpp" />
+		<Unit filename="src/Entities/ship.cpp" />
+		<Unit filename="src/FrontEnd.cpp" />
+		<Unit filename="src/GameContext.cpp" />
+		<Unit filename="src/GamePlay.cpp" />
+		<Unit filename="src/Input/inputkeys.cpp" />
+		<Unit filename="src/Map/Loader/jsonmaploader.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

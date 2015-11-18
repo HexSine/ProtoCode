@@ -1,0 +1,6 @@
+Compiling shader : ./Data/Shaders/TexturedVertexShader.glsl
+(null)
+Compiling shader : ./Data/Shaders/TexturedFragmentShader.glsl
+(null)
+Linking program
+

@@ -1,0 +1,803 @@
+# depslib dependency file v1.0
+1446609773 source:c:\protocode\protoapplication\main.cpp
+	<windows.h>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<GLFW/glfw3.h>
+	"ProtoEngine/proto_core.h"
+	"ProtoEngine/application.h"
+	"State/BaseState.h"
+	"State/FrontEnd.h"
+	"State/GamePlay.h"
+	"State/GameContext.h"
+	"State/GameStates.h"
+
+1425277687 c:\protocode\protoengine\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1425277688 c:\protocode\protoengine\include\gl\wglew.h
+	<windows.h>
+
+1425442333 c:\protocode\protoengine\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES3/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES3/gl2ext.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1446613193 c:\protocode\protoengine\include\protoengine\proto_core.h
+	<iostream>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<vector>
+	<list>
+	<unordered_map>
+	<map>
+	<stack>
+	<math.h>
+	<assert.h>
+	<ctime>
+	<windows.h>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<SOIL.h>
+
+1426982597 c:\protocode\protoengine\include\protoengine\application.h
+
+1425539685 c:\protocode\protoengine\include\protoengine\precompiled.h
+	"ProtoEngine/proto_common.h"
+
+1425449453 c:\protocode\protoengine\include\protoengine\proto_common.h
+	<stdio.h>
+	"ProtoEngine/proto_core.h"
+
+1425886064 source:c:\protocode\protoapplication\src\basestate.cpp
+	"State/BaseState.h"
+
+1425952218 c:\protocode\protoapplication\include\state\basestate.h
+	"GameContext.h"
+	"GameStates.h"
+
+1431834603 c:\protocode\protoapplication\include\state\gamecontext.h
+	"ProtoEngine/ProtoEngine.h"
+
+1425952207 c:\protocode\protoapplication\include\state\gamestates.h
+
+1446611352 source:c:\protocode\protoapplication\src\frontend.cpp
+	"State/FrontEnd.h"
+	"ProtoEngine/Input/input.h"
+
+1446611031 c:\protocode\protoapplication\include\state\frontend.h
+	"BaseState.h"
+	"ProtoEngine/ProtoEngine.h"
+	"Entities/FrontEnd/menuitem.h"
+	"Entities/Map/background.h"
+
+1426832634 source:c:\protocode\protoapplication\src\gamecontext.cpp
+	"State/GameContext.h"
+
+1446610078 source:c:\protocode\protoapplication\src\gameplay.cpp
+	"State/GamePlay.h"
+	"jsonmaploader.h"
+	<assert.h>
+
+1446528026 c:\protocode\protoapplication\include\state\gameplay.h
+	"ProtoEngine/ProtoEngine.h"
+	"BaseState.h"
+	"Entities\Characters\knight.h"
+	"Entities\Characters\archer.h"
+	"Entities\Map\tile_box.h"
+	"Entities\Map\background.h"
+	"Entities\map.h"
+
+1425889359 source:c:\protocode\protoapplication\src\player.cpp
+	"player.h"
+
+1425962614 c:\protocode\protoapplication\include\player.h
+	"ProtoEngine/protoobject.h"
+
+1426048631 c:\protocode\protoengine\include\protoengine\protoobject.h
+
+1425442325 c:\protocode\protoengine\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1425442325 c:\protocode\protoengine\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1426567727 c:\protocode\protoengine\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\precision.hpp
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\_swizzle.hpp
+
+1425442326 c:\protocode\protoengine\include\glm\detail\_swizzle_func.hpp
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec2.inl
+
+1425442325 c:\protocode\protoengine\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec3.inl
+
+1425442325 c:\protocode\protoengine\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec4_sse2.inl
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec4_avx.inl
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec4_avx2.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat2x2.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat2x3.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat2x4.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat3x2.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat3x3.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat3x4.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat4x2.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat4x3.inl
+
+1425442325 c:\protocode\protoengine\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_mat4x4.inl
+
+1425442325 c:\protocode\protoengine\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1425442326 c:\protocode\protoengine\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_vec1.inl
+
+1425442325 c:\protocode\protoengine\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1425442325 c:\protocode\protoengine\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1425442325 c:\protocode\protoengine\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\detail\type_half.inl
+
+1425442325 c:\protocode\protoengine\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1425442325 c:\protocode\protoengine\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1425442325 c:\protocode\protoengine\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1426138410 c:\protocode\protoengine\include\protoengine\render_object.h
+
+1425442326 c:\protocode\protoengine\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1425442326 c:\protocode\protoengine\include\glm\gtc\constants.inl
+	<limits>
+
+1425442326 c:\protocode\protoengine\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1432982394 c:\protocode\protoengine\include\protoengine\graphics\render_object.h
+
+1426572819 c:\protocode\protoengine\include\protoengine\graphics\camera.h
+
+1432269180 c:\protocode\protoengine\include\protoengine\graphics\quad.h
+	"mesh.h"
+
+1426642127 c:\protocode\protoengine\include\protoengine\graphics\mesh.h
+
+1426641119 c:\protocode\protoengine\include\soil.h
+
+1426825245 c:\protocode\protoengine\include\protoengine\graphics\material.h
+
+1432800581 c:\protocode\protoengine\include\protoengine\graphicssystem.h
+	"ProtoEngine/matrixstack.h"
+	"ProtoEngine/Graphics/render_object.h"
+
+1427250847 c:\protocode\protoengine\include\protoengine\matrixstack.h
+
+1432024710 c:\protocode\protoengine\include\protoengine\entity.h
+	"Graphics/render_object.h"
+	"transform.h"
+	"Physics/collisionsystem.h"
+
+1426978652 c:\protocode\protoengine\include\protoengine\transform.h
+
+1427173778 source:c:\protocode\protoapplication\src\entities\ship.cpp
+	"ship.h"
+	"ProtoEngine\Input\input.h"
+	"ProtoEngine/Graphics/quad.h"
+	"ProtoEngine/Graphics/material.h"
+
+1427251649 c:\protocode\protoapplication\include\entities\ship.h
+	"ProtoEngine/ProtoEngine.h"
+
+1432183655 c:\protocode\protoengine\include\protoengine\input\input.h
+
+1427251597 c:\protocode\protoapplication\include\entities\frontend\menuitem.h
+	"ProtoEngine/ProtoEngine.h"
+
+1427173961 source:c:\protocode\protoapplication\src\entities\frontend\menuitem.cpp
+	"menuitem.h"
+	"ProtoEngine\Input\input.h"
+	"ProtoEngine/Graphics/quad.h"
+	"ProtoEngine/Graphics/material.h"
+
+1446613845 c:\protocode\protoengine\include\protoengine\protoengine.h
+	"proto_core.h"
+	"Scene/scene.h"
+	"Scene/scenenode.h"
+	"GraphicsSystem.h"
+	"Graphics\camera.h"
+	"Graphics\quad.h"
+	"Graphics\material.h"
+	"Graphics\render_object.h"
+	"Graphics\shader.h"
+	"Input\input.h"
+	"Physics\boxcollider.h"
+	"Physics\collisionsystem.h"
+	"Resource/resourcemanager.hpp"
+	"application.h"
+	"entity.h"
+	"matrixstack.h"
+	"transform.h"
+
+1426824705 c:\protocode\protoengine\include\protoengine\graphics\shader.h
+
+1427256811 source:c:\protocode\protoapplication\src\entities\knight.cpp
+	"knight.h"
+
+1427255165 c:\protocode\protoapplication\include\entities\knight.h
+	"ProtoEngine/ProtoEngine.h"
+
+1427424986 c:\protocode\protoapplication\include\entities\characters\knight.h
+	"character.h"
+
+1432192881 c:\protocode\protoapplication\include\entities\characters\character.h
+	"ProtoEngine\ProtoEngine.h"
+	"Input/inputkeys.h"
+
+1432025284 source:c:\protocode\protoapplication\src\entities\characters\archer.cpp
+	"archer.h"
+
+1427426812 c:\protocode\protoapplication\include\entities\characters\archer.h
+	"Entities\Characters\character.h"
+	"Entities\Projectiles\projectile.h"
+
+1446610209 source:c:\protocode\protoapplication\src\entities\characters\character.cpp
+	"character.h"
+
+1430791618 source:c:\protocode\protoapplication\src\entities\characters\knight.cpp
+	"knight.h"
+
+1427256503 c:\protocode\protoapplication\include\input\inputkeys.h
+	"ProtoEngine\ProtoEngine.h"
+
+1427255865 source:c:\protocode\protoapplication\src\input\inputkeys.cpp
+	"inputkeys.h"
+
+1427431999 c:\protocode\protoapplication\include\entities\projectiles\projectile.h
+	"ProtoEngine\ProtoEngine.h"
+
+1427432489 source:c:\protocode\protoapplication\src\entities\projectiles\projectile.cpp
+	"projectile.h"
+
+1432040879 c:\protocode\protoengine\include\protoengine\physics\collisionsystem.h
+
+1432181780 c:\protocode\protoapplication\include\entities\map
+
+1431843583 c:\protocode\protoapplication\include\entities\map\tile_box.h
+	"ProtoEngine\ProtoEngine.h"
+
+1432000231 source:c:\protocode\protoapplication\src\entities\map\tile_box.cpp
+	"tile_box.h"
+
+1431843583 c:\protocode\protoapplication\include\entities\map\\tile_box.h
+	"ProtoEngine\ProtoEngine.h"
+
+1431998050 c:\protocode\protoengine\include\protoengine\physics\boxcollider.h
+
+1432178180 c:\protocode\protoapplication\include\entities\map\background.h
+	"ProtoEngine\ProtoEngine.h"
+
+1446611311 source:c:\protocode\protoapplication\src\entities\map\background.cpp
+	"background.h"
+
+1432178180 c:\protocode\protoapplication\include\entities\map\\background.h
+	"ProtoEngine\ProtoEngine.h"
+
+1432977574 c:\protocode\protoapplication\include\entities\map.h
+	<ProtoEngine.h>
+
+1432979121 source:c:\protocode\protoapplication\src\entities\map\map.cpp
+	"map.h"
+
+1432771735 c:\protocode\protoapplication\include\map
+
+1432965381 source:c:\protocode\protoapplication\src\map\loader\jsonmaploader.cpp
+	"jsonmaploader.h"
+
+1432963868 c:\protocode\protoapplication\include\map\loader\jsonmaploader.h
+	"rapidjson/document.h"
+	"rapidjson/writer.h"
+	"rapidjson/stringbuffer.h"
+	<ProtoEngine.h>
+	"map.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\document.h
+	"reader.h"
+	"internal/meta.h"
+	"internal/strfunc.h"
+	<new>
+	<string>
+	<iterator>
+	<utility>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\reader.h
+	"rapidjson.h"
+	"encodings.h"
+	"internal/meta.h"
+	"internal/stack.h"
+	"internal/strtod.h"
+	<intrin.h>
+	<nmmintrin.h>
+	<emmintrin.h>
+	<stdexcept>
+	"rapidjson/error/error.h"
+	"rapidjson/reader.h"
+	"error/error.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\rapidjson.h
+	<cstdlib>
+	<cstring>
+	"rapidjson/..."
+	"msinttypes/stdint.h"
+	"msinttypes/inttypes.h"
+	<stdint.h>
+	<inttypes.h>
+	<endian.h>
+	"rapidjson/..."
+	<cassert>
+	"allocators.h"
+	"encodings.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\msinttypes\stdint.h
+	<stdint.h>
+	<limits.h>
+	<wchar.h>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\msinttypes\inttypes.h
+	"stdint.h"
+	<inttypes.h>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\allocators.h
+	"rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\encodings.h
+	"rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\meta.h
+	"../rapidjson.h"
+	<type_traits>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\stack.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\strtod.h
+	"../rapidjson.h"
+	"ieee754.h"
+	"biginteger.h"
+	"diyfp.h"
+	"pow10.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\ieee754.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\biginteger.h
+	"../rapidjson.h"
+	<intrin.h>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\diyfp.h
+	"../rapidjson.h"
+	<intrin.h>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\pow10.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\error\error.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\strfunc.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\writer.h
+	"rapidjson.h"
+	"internal/stack.h"
+	"internal/strfunc.h"
+	"internal/dtoa.h"
+	"internal/itoa.h"
+	"stringbuffer.h"
+	<new>
+	<string>
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\dtoa.h
+	"itoa.h"
+	"diyfp.h"
+	"ieee754.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\internal\itoa.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\protoapplication\include\rapidjson\stringbuffer.h
+	"rapidjson.h"
+	<utility>
+	"internal/stack.h"
+
+1432804871 c:\protocode\protoengine\include\protoengine\scene\scene.h
+	"ProtoEngine\Scene\scenenode.h"
+
+1432805512 c:\protocode\protoengine\include\protoengine\scene\scenenode.h
+
+1446614575 c:\protocode\protoengine\include\protoengine\resource\resourcemanager.hpp
+	<map>
+	<string>
+	<exception>
+

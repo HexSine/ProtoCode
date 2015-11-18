@@ -1,44 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="include\ProtoEngine\proto_core.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\ProtoEngine\Scene\scene.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="275" topLine="0" />
+			<Cursor1 position="238" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="precompiled.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\ProtoEngine\Scene\scenenode.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="202" topLine="0" />
+			<Cursor1 position="225" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\application.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\ProtoEngine\application.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2490" topLine="70" />
+			<Cursor1 position="680" topLine="1" />
 		</Cursor>
 	</File>
-	<File name="include\ProtoEngine\proto_common.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\ProtoEngine\basestate.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="301" topLine="0" />
+			<Cursor1 position="351" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Data\Shaders\DefaultVertexShader.glsl" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\ProtoEngine\entity.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="199" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ProtoEngine\gamecontext.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="246" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ProtoEngine\precompiled.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="365" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="include\ProtoEngine\proto_common.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="172" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ProtoEngine\proto_core.h" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="228" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ProtoEngine\transform.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="485" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Scene\scene.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="GraphicsSystem.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="383" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\GraphicsSystem.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Scene\scenenode.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="68" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\ProtoEngine\application.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\application.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="280" topLine="0" />
+			<Cursor1 position="287" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\basestate.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="38" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\entity.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="68" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\transform.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="487" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ProtoEngine\ProtoEngine.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="158" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

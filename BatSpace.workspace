@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="BatApplication/BatApplication.cbp" />
+		<Project filename="BatKernel/BatKernel.cbp" />
+		<Project filename="ProtoEngine/ProtoEngine.cbp" />
+		<Project filename="ProtoGraphicsLib/ProtoGraphicsLib.cbp" />
+		<Project filename="ProtoGraphicsTest/ProtoGraphicsTest.cbp" />
+		<Project filename="BatPhysics/BatPhysics.cbp" />
+		<Project filename="BatInputLib/BatInputLib.cbp" />
+		<Project filename="ProtoApplication/ProtoApplication.cbp" />
+		<Project filename="BatMath/BatMath.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

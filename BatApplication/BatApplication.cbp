@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BatApplication" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BatApplication" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="../BatKernel/include" />
+					<Add directory="../ProtoEngine/include" />
+					<Add directory="../ProtoGraphicsLib/include" />
+					<Add directory="../BatPhysics/include" />
+					<Add directory="../BatInputLib/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../BatKernel/bin/Debug" />
+					<Add directory="../ProtoEngine/bin/Debug" />
+					<Add directory="../ProtoGraphicsLib/bin/Debug" />
+					<Add directory="../BatInputLib/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BatApplication" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Winvalid-pch" />
+			<Add option='-include &quot;BatApplication/precompiled.h&quot;' />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="../BatKernel/include" />
+			<Add directory="../ProtoEngine/include" />
+			<Add directory="../ProtoGraphicsLib/include" />
+			<Add directory="../BatPhysics/include" />
+			<Add directory="../BatInputLib/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows -lmingw32" />
+			<Add option="-lBatInputLib -lProtoGraphicsLib -lProtoEngine -lBatKernel" />
+			<Add option="-lglu32 -lgdi32" />
+			<Add option="-lglew32 -lglfw3" />
+			<Add option="-lSOIL" />
+			<Add option="-lopengl32" />
+		</Linker>
+		<Unit filename="include/BatApplication/frontend.h" />
+		<Unit filename="include/BatApplication/precompiled.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="src/frontend.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

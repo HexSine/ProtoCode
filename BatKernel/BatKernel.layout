@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\BatKernel\ibatsystem.h" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="46" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\iupdateable.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\batcore.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="69" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\common.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="491" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\ibatcomponent.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="166" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\iupdateable.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="34" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\ibatinput.h" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="132" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\ibatcomponent.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="143" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\Resource\resourcemanager.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2053" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\precompiled.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="361" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\matrixstack.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\matrixstack.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="128" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\ibatsystem.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="33" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\BatKernel\Graphics\igraphicssystem.h" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="406" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

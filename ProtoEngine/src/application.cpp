@@ -1,25 +1,6 @@
-#include "../precompiled.h"
+#include "ProtoEngine/precompiled.h"
 #include "ProtoEngine/application.h"
-
-namespace
-{
-    LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
-    {
-        switch(uMsg)
-        {
-
-		case WM_DESTROY:
-			{
-				PostQuitMessage(0);
-			}
-        default:
-            return DefWindowProc(hWnd,uMsg,wParam,lParam);
-        }
-        return 0;
-    }
-}
-
-Application::Application()
+Application::Application() : p_window(NULL)
 {
 
 }
@@ -28,93 +9,62 @@ Application::~Application()
 {
     //dtor
 }
-
-void Application::EnableOpenGL()
+bool Application::Initialize(HINSTANCE hInstance,const char* name,int width, int height)
 {
-    PIXELFORMATDESCRIPTOR pfd;
+    // Initialise GLFW
+    if( !glfwInit() )
+    {
+        fprintf( stderr, "Failed to initialize GLFW\n" );
+        return false;
+    }
 
-    int iFormat;
+    glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);// We want OpenGL 3.3
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MaxOS happy;
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //We don't want the old OpenGL
 
-    /* get the device context (DC) */
-    m_hDC = GetDC(m_hWnd);
+    p_window = glfwCreateWindow(width,height,name,NULL,NULL);
+    if( p_window == NULL )
+    {
+        fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
+        glfwTerminate();
+        return false;
+    }
+    glfwMakeContextCurrent(p_window);
+    glewExperimental=true; // Needed in core profile
 
-    /* set the pixel format for the DC */
-    ZeroMemory(&pfd, sizeof(pfd));
+    if (glewInit() != GLEW_OK) {
+        fprintf(stderr, "Failed to initialize GLEW\n");
+        return false;
+    }
 
-    pfd.nSize = sizeof(pfd);
-    pfd.nVersion = 1;
-    pfd.dwFlags = PFD_DRAW_TO_WINDOW |
-                  PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER;
-    pfd.iPixelType = PFD_TYPE_RGBA;
-    pfd.cColorBits = 24;
-    pfd.cDepthBits = 16;
-    pfd.iLayerType = PFD_MAIN_PLANE;
+    glfwSetInputMode(p_window,GLFW_STICKY_KEYS, GL_TRUE);
+    glClearColor(0.5f,0.0f,0.8f,1.0f);
 
-    iFormat = ChoosePixelFormat(m_hDC, &pfd);
+    //Initialize Input Handling
+    //Input::Init(p_window);
 
-    SetPixelFormat(m_hDC, iFormat, &pfd);
-
-    /* create and enable the render context (RC) */
-    m_hRC = wglCreateContext(m_hDC);
-
-    wglMakeCurrent(m_hDC, m_hRC);
-}
-void Application::DisableOpenGL ()
-{
-    wglMakeCurrent(NULL, NULL);
-    wglDeleteContext(m_hRC);
-    ReleaseDC(m_hWnd, m_hDC);
-}
-
-void Application::Initialize(HINSTANCE hInstance,const char* name,int width, int height)
-{
-    //Create Window Class
-    WNDCLASSEX wcex;
-    wcex.lpfnWndProc = WinProc;
-    wcex.lpszClassName = name;
-    wcex.cbClsExtra = 0;
-    wcex.cbWndExtra = 0;
-    wcex.hInstance = hInstance;
-    wcex.cbSize = sizeof(WNDCLASSEX);
-    wcex.style = CS_OWNDC;
-    wcex.hIcon = LoadIcon(NULL,IDI_APPLICATION);
-    wcex.hIconSm = LoadIcon(NULL,IDI_APPLICATION);
-    wcex.hCursor = LoadCursor(NULL,IDC_ARROW);
-    wcex.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
-    wcex.lpszMenuName = NULL;
-    RegisterClassEx(&wcex);
-    //Create Window
-    m_hWnd = CreateWindowEx(0,name,name,WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,CW_USEDEFAULT,height,width,NULL,NULL,hInstance,NULL);
-
-    ShowWindow(m_hWnd,SW_SHOW);
-
-
-    /* enable OpenGL for the window */
-    EnableOpenGL();
-
+    bool ret = Proto::ProtoInitialize();
+    return ret;
 }
 void Application::Update()
 {
-    MSG msg;
-    bool quit;
-    while(quit == false)
-    {
-        PeekMessage(&msg,NULL,0,0,PM_REMOVE);
-        if(msg.message == WM_QUIT)
-        {
-            quit = true;
-        }
-        else
-        {
-            TranslateMessage(&msg);
-            DispatchMessage(&msg);
-        }
+    m_prevTime = glfwGetTime();
+    do{
+        double currentTime = glfwGetTime();
+        double deltaTime = currentTime - m_prevTime;
+        glfwSwapBuffers(p_window);
+        glfwPollEvents();
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        Proto::ProtoUpdate(deltaTime);
+        Proto::ProtoRender();
+        m_prevTime = currentTime;
     }
+    while( glfwGetKey(p_window,GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(p_window) == 0);
 }
 void Application::Terminate()
 {
-
-    DisableOpenGL();
-
-    DestroyWindow(m_hWnd);
+   glfwTerminate();
+   Proto::ProtoTerminate();
 }

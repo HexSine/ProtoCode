@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProtoGraphicsLib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProtoGraphicsLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-Winvalid-pch" />
+					<Add option='-include &quot;ProtoGraphicsLib/precompiled.h&quot;' />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProtoGraphicsLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="../BatKernel/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows -lmingw32  -lglew32 -lglfw3 -lglu32 -lgdi32 -lopengl32" />
+		</Linker>
+		<Unit filename="include/ProtoGraphicsLib/ProtoGraphicsLib.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="include/ProtoGraphicsLib/camera.h" />
+		<Unit filename="include/ProtoGraphicsLib/graphicssystem.h" />
+		<Unit filename="include/ProtoGraphicsLib/material.h" />
+		<Unit filename="include/ProtoGraphicsLib/mesh.h" />
+		<Unit filename="include/ProtoGraphicsLib/precompiled.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="include/ProtoGraphicsLib/renderobject.h" />
+		<Unit filename="include/ProtoGraphicsLib/shader.h" />
+		<Unit filename="include/ProtoGraphicsLib/texture.h" />
+		<Unit filename="src/ProtoGraphics.cpp" />
+		<Unit filename="src/ProtoGraphicsLib.cpp" />
+		<Unit filename="src/camera.cpp" />
+		<Unit filename="src/graphicssystem.cpp" />
+		<Unit filename="src/material.cpp" />
+		<Unit filename="src/mesh.cpp" />
+		<Unit filename="src/precompiled.cpp" />
+		<Unit filename="src/renderobject.cpp" />
+		<Unit filename="src/shader.cpp" />
+		<Unit filename="src/texture.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

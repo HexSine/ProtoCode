@@ -1,6 +1,5 @@
-#include <iostream>
-#include "BatKernel/precompiled.h"
-#include "BatInputLib\input.h"
+#include "BatInputLib/precompiled.h"
+#include "BatInputLib/input.h"
 
 Input::Input() : p_win(NULL)
 {

@@ -3,7 +3,7 @@
 
 #include "BatKernel/batcore.h"
 #include "ProtoGraphicsLib/ProtoGraphicsLib.h"
-#include "BatInputLib/input.h"
+#include "BatInputLib/BatInput.h"
 
 #include "ProtoEngine/proto_core.h"
 

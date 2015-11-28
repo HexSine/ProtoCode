@@ -524,10 +524,10 @@
 	"ProtoEngine/precompiled.h"
 	"ProtoEngine/transform.h"
 
-1447229023 source:c:\protocode\protoengine\include\protoengine\protoengine.h
+1448685880 source:c:\protocode\protoengine\include\protoengine\protoengine.h
 	"BatKernel/batcore.h"
 	"ProtoGraphicsLib/ProtoGraphicsLib.h"
-	"BatInputLib/input.h"
+	"BatInputLib/BatInput.h"
 	"ProtoEngine/proto_core.h"
 	"ProtoEngine/Scene\scene.h"
 	"ProtoEngine/Scene\scenenode.h"
@@ -558,7 +558,9 @@
 1447034229 source:c:\protocode\protoengine\src\gamecontext.cpp
 	"ProtoEngine/GameContext.h"
 
-1447297886 c:\protocode\batkernel\include\batkernel\batcore.h
+1448340122 c:\protocode\batkernel\include\batkernel\batcore.h
+	<glm/glm.hpp>
+	<stack>
 	"BatKernel/common.h"
 	"BatKernel/Resource/resourcemanager.hpp"
 	"BatKernel/matrixstack.h"
@@ -1100,5 +1102,16 @@
 
 1446780936 c:\protocode\protoengine\include\\protoengine\proto_core.h
 
-1447297139 c:\protocode\batkernel\include\batkernel\ibatinput.h
+1448696977 c:\protocode\batkernel\include\batkernel\ibatinput.h
+
+1448685684 c:\protocode\batinputlib\include\batinputlib\batinput.h
+	"BatInputLib/rawinputconstants.h"
+	"BatInputLib/inputcontext.h"
+	"BatInputLib/inputsystem.h"
+
+1447905061 c:\protocode\batinputlib\include\batinputlib\rawinputconstants.h
+
+1448696684 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
+
+1448697236 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
 

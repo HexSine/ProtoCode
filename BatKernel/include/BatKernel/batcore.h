@@ -1,6 +1,8 @@
 #ifndef BATCORE_H
 #define BATCORE_H
 
+#include <glm/glm.hpp>
+#include <stack>
 #include "BatKernel/common.h"
 #include "BatKernel/Resource/resourcemanager.hpp"
 #include "BatKernel/matrixstack.h"

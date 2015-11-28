@@ -34,11 +34,11 @@ namespace Proto
     BaseState* currentState;
     GameContext gameContext;
     GraphicsSystem gSys;
-    Input input;
+    InputSystem input;
     int nextState = 0;
     bool ProtoInitialize()
     {
-        input.Init(app.GetWin());
+        input.Initialize(app.GetWin());
         currentState = new FrontEnd(gSys,input,gameContext);
         currentState->Load();
 

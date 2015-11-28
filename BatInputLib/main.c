@@ -11,3 +11,4 @@
 
 // A function adding two integers and returning the result
 
+#include "BatInputLib/precompiled.h"

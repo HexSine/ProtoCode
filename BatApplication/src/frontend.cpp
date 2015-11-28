@@ -48,14 +48,14 @@ void FrontEnd::Unload()
 }
 int FrontEnd::Update(float deltaTime)
 {
-    if(m_InputSystem.GetKeyDown(GLFW_KEY_S))
+    /*if(m_InputSystem.GetKeyDown(GLFW_KEY_S))
     {
         m_Cursor.m_Transform.SetPosition(m_CursorPositions[1]);
     }
     else if(m_InputSystem.GetKeyDown(GLFW_KEY_W))
     {
         m_Cursor.m_Transform.SetPosition(m_CursorPositions[0]);
-    }
+    }*/
     return 0;
 }
 void FrontEnd::Render()

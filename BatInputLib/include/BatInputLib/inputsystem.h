@@ -1,19 +1,28 @@
 #ifndef INPUTSYSTEM_H
 #define INPUTSYSTEM_H
 
+
+
+
 class InputSystem : public IBatInput
 {
     public:
         InputSystem();
         virtual ~InputSystem();
         virtual bool Initialize(GLFWwindow* _win);
-        InputContainer HandleInput();
-        void PushContext(InputContext* context);
-        void PopContext();
+        virtual void SetInputState(InputState* state);
+        virtual void UpdateButtons();
+
+        virtual bool GetButton(u32 key);
+        virtual bool GetButtonDown(u32 key);
+        virtual bool GetButtonUp(u32 key);
 
     protected:
-        std::stack<InputContext*> m_ContextStack;
+
+        static InputState* p_State;
+        static void KeyFunction(GLFWwindow*,int,int,int,int);
         GLFWwindow* p_win;//g
+
     private:
 };
 

@@ -52,11 +52,11 @@
 1448686292 c:\protocode\batinputlib\include\batinputlib\input.h
 	"BatKernel/ibatinput.h"
 
-1448696977 c:\protocode\batkernel\include\batkernel\ibatinput.h
+1449208242 c:\protocode\batkernel\include\batkernel\ibatinput.h
 
 1447299063 source:c:\protocode\batinputlib\main.c
 
-1448697645 source:c:\protocode\batinputlib\include\batinputlib\precompiled.h
+1449206459 source:c:\protocode\batinputlib\include\batinputlib\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -67,6 +67,7 @@
 	<map>
 	<stack>
 	<set>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -79,7 +80,7 @@
 	<SOIL.h>
 	"BatKernel/batcore.h"
 
-1448697645 c:\protocode\batinputlib\include\batinputlib\precompiled.h
+1449206459 c:\protocode\batinputlib\include\batinputlib\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -90,6 +91,7 @@
 	<map>
 	<stack>
 	<set>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -102,21 +104,20 @@
 	<SOIL.h>
 	"BatKernel/batcore.h"
 
-1448686454 source:c:\protocode\batinputlib\src\inputcontext.cpp
+1448703447 source:c:\protocode\batinputlib\src\inputcontext.cpp
 	"BatInputLib/precompiled.h"
-	"BatKernel/batcore.h"
 	"BatInputLib/inputcontext.h"
 
 1448684550 c:\protocode\batinputlib\include\batinputlib\\inputcontext.h
 
-1448697230 source:c:\protocode\batinputlib\src\inputsystem.cpp
+1449208751 source:c:\protocode\batinputlib\src\inputsystem.cpp
 	"BatInputLib/precompiled.h"
 	"BatInputLib/inputcontext.h"
 	"BatInputLib/inputsystem.h"
 
 1448684762 c:\protocode\batinputlib\include\batinputlib\\inputsystem.h
 
-1448696684 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
+1448703433 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
 
-1448697236 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
+1449208147 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
 

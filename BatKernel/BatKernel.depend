@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1447224325 source:c:\protocode\batkernel\include\batkernel\precompiled.h
+1449206497 source:c:\protocode\batkernel\include\batkernel\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -9,6 +9,8 @@
 	<unordered_map>
 	<map>
 	<stack>
+	<set>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -25,7 +27,7 @@
 	"BatKernel/precompiled.h"
 	"BatKernel/application.h"
 
-1447224325 c:\protocode\batkernel\include\batkernel\precompiled.h
+1449206497 c:\protocode\batkernel\include\batkernel\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -35,6 +37,8 @@
 	<unordered_map>
 	<map>
 	<stack>
+	<set>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -102,10 +106,10 @@
 	"BatKernel/ibatinput.h"
 	"BatKernel/ibatcomponent.h"
 
-1448696977 c:\protocode\batkernel\include\batkernel\ibatinput.h
+1449208242 c:\protocode\batkernel\include\batkernel\ibatinput.h
 
 1447296915 source:c:\protocode\batkernel\src\ibatinput.cpp
 	"ibatinput.h"
 
-1448696977 c:\protocode\batkernel\include\batkernel\\ibatinput.h
+1449208242 c:\protocode\batkernel\include\batkernel\\ibatinput.h
 

@@ -54,6 +54,7 @@
 		<Unit filename="include/BatKernel/ibatsystem.h" />
 		<Unit filename="include/BatKernel/iupdateable.h" />
 		<Unit filename="include/BatKernel/matrixstack.h" />
+		<Unit filename="include/BatKernel/object.h" />
 		<Unit filename="include/BatKernel/precompiled.h">
 			<Option compile="1" />
 			<Option weight="0" />
@@ -63,6 +64,7 @@
 		<Unit filename="src/ibatsystem.cpp" />
 		<Unit filename="src/iupdateable.cpp" />
 		<Unit filename="src/matrixstack.cpp" />
+		<Unit filename="src/object.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

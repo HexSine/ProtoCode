@@ -1,6 +1,6 @@
 #include "BatApplication/precompiled.h"
 #include "BatApplication/frontend.h"
-FrontEnd::FrontEnd(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,GameContext& gc) : BaseState(graphicsSystem,inputSystem,gc)
+FrontEnd::FrontEnd(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,GameContext& gc) : BaseState(graphicsSystem,inputSystem,gc), m_CursorIndex(0)
 {
     //ctor
 }
@@ -12,6 +12,7 @@ FrontEnd::~FrontEnd()
 
 void FrontEnd::Load()
 {
+    m_InputSystem.SetInputState(&m_InputState);
     std::string URImesh = meshManager.Load("Data/Models/quad.obj");
     std::string URIshader = shaderManager.Load("Data/Shaders/TexturedProgram.glsl");
     std::string URItexture = textureManager.Load("Data/Textures/FrontEnd/BackGround.png");
@@ -30,8 +31,9 @@ void FrontEnd::Load()
     m_cursor.p_Mesh = meshManager.GetPtr(URImesh);
     m_cursor.p_Material = &m_CursorMaterial;
 
-    m_CursorPositions[0] = glm::vec3(-64,32,0);
-    m_CursorPositions[1] = glm::vec3(-64,-32,0);
+    m_CursorPositions[0] = glm::vec3(-64,64,0);
+    m_CursorPositions[1] = glm::vec3(-64,-64,0);
+    m_CursorPositions[2] = glm::vec3(-64,0,0);
 
     m_Cursor.m_Transform.SetPosition(m_CursorPositions[0]);
 
@@ -39,6 +41,21 @@ void FrontEnd::Load()
     m_cam.SetOrtho(glm::vec3(0,0,0),640,480,0.1f,100.0f);
 
     glUseProgram( m_BGMaterial.m_ProgramID);
+
+    m_InputState.AddKey(GLFW_KEY_UP);
+    m_InputState.AddKey(GLFW_KEY_DOWN);
+    m_InputState.AddKey(GLFW_KEY_ENTER);
+
+}
+void FrontEnd::MoveUp()
+{
+    m_CursorIndex = (m_CursorIndex+1) % 3;
+    m_Cursor.m_Transform.SetPosition(m_CursorPositions[m_CursorIndex]);
+}
+void FrontEnd::MoveDown()
+{
+    m_CursorIndex = (m_CursorIndex+2) % 3;
+    m_Cursor.m_Transform.SetPosition(m_CursorPositions[m_CursorIndex]);
 }
 void FrontEnd::Unload()
 {
@@ -48,15 +65,20 @@ void FrontEnd::Unload()
 }
 int FrontEnd::Update(float deltaTime)
 {
-    /*if(m_InputSystem.GetKeyDown(GLFW_KEY_S))
+    int ret = 0;
+    if(m_InputSystem.GetButtonDown(GLFW_KEY_UP))
     {
-        m_Cursor.m_Transform.SetPosition(m_CursorPositions[1]);
+        MoveUp();
     }
-    else if(m_InputSystem.GetKeyDown(GLFW_KEY_W))
+    if(m_InputSystem.GetButtonDown(GLFW_KEY_DOWN))
     {
-        m_Cursor.m_Transform.SetPosition(m_CursorPositions[0]);
-    }*/
-    return 0;
+        MoveDown();
+    }
+    if(m_InputSystem.GetButtonDown(GLFW_KEY_ENTER))
+    {
+        ret = 1;
+    }
+    return ret;
 }
 void FrontEnd::Render()
 {

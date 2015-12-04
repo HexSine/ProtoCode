@@ -48,6 +48,7 @@ namespace Proto
     }
     bool ProtoUpdate(const long double deltaTime)
     {
+        input.UpdateButtons();
         //check if we need to change state
         if(nextState != 0)
         {

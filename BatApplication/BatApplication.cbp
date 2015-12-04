@@ -19,6 +19,7 @@
 					<Add directory="../ProtoGraphicsLib/include" />
 					<Add directory="../BatPhysics/include" />
 					<Add directory="../BatInputLib/include" />
+					<Add directory="include/BatApplication/" />
 				</Compiler>
 				<Linker>
 					<Add directory="../BatKernel/bin/Debug" />
@@ -35,6 +36,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="include/BatApplication/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -61,11 +63,13 @@
 			<Add option="-lopengl32" />
 		</Linker>
 		<Unit filename="include/BatApplication/frontend.h" />
+		<Unit filename="include/BatApplication/gameplay.h" />
 		<Unit filename="include/BatApplication/precompiled.h">
 			<Option compile="1" />
 			<Option weight="0" />
 		</Unit>
 		<Unit filename="src/frontend.cpp" />
+		<Unit filename="src/gameplay.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<code_completion />

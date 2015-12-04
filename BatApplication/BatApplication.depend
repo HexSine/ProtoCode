@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1448686548 source:c:\protocode\batapplication\src\main.cpp
+1449208891 source:c:\protocode\batapplication\src\main.cpp
 	"BatApplication/precompiled.h"
 	"ProtoEngine/ProtoEngine.h"
 	"BatApplication/frontend.h"
@@ -37,7 +37,7 @@
 
 1432040879 c:\protocode\protoengine\include\protoengine\physics\collisionsystem.h
 
-1447043922 source:c:\protocode\batapplication\include\batapplication\precompiled.h
+1448749246 source:c:\protocode\batapplication\include\batapplication\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -47,6 +47,7 @@
 	<unordered_map>
 	<map>
 	<stack>
+	<set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -524,11 +525,11 @@
 
 1447222594 c:\protocode\protoengine\include\protoengine\gamecontext.h
 
-1448686143 source:c:\protocode\batapplication\src\frontend.cpp
+1449208263 source:c:\protocode\batapplication\src\frontend.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/frontend.h"
 
-1447043922 c:\protocode\batapplication\include\batapplication\precompiled.h
+1448749246 c:\protocode\batapplication\include\batapplication\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -538,6 +539,7 @@
 	<unordered_map>
 	<map>
 	<stack>
+	<set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -550,7 +552,7 @@
 	<SOIL.h>
 	"ProtoEngine\protoengine.h"
 
-1448686127 c:\protocode\batapplication\include\batapplication\frontend.h
+1449208282 c:\protocode\batapplication\include\batapplication\frontend.h
 	"ProtoEngine\protoengine.h"
 
 1447022459 c:\protocode\protographicslib\include\protographicslib\protographicslib.h
@@ -590,16 +592,16 @@
 1447299400 c:\protocode\batinputlib\include\batinputlib\input.h
 	"BatKernel/ibatinput.h"
 
-1448686245 c:\protocode\batkernel\include\batkernel\ibatinput.h
+1449208242 c:\protocode\batkernel\include\batkernel\ibatinput.h
 
-1448684550 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
+1448703433 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
 
 1448685684 c:\protocode\batinputlib\include\batinputlib\batinput.h
 	"BatInputLib/rawinputconstants.h"
 	"BatInputLib/inputcontext.h"
 	"BatInputLib/inputsystem.h"
 
-1447905061 c:\protocode\batinputlib\include\batinputlib\rawinputconstants.h
+1448703633 c:\protocode\batinputlib\include\batinputlib\rawinputconstants.h
 
-1448686347 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
+1449208147 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
 

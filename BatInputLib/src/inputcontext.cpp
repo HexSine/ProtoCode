@@ -1,5 +1,5 @@
 #include "BatInputLib/precompiled.h"
-#include "BatKernel/batcore.h"
+/*#include "BatKernel/batcore.h"
 #include "BatInputLib/inputcontext.h"
 
 InputContext::InputContext(std::string path)
@@ -33,4 +33,4 @@ InputContext::~InputContext()
 void InputContext::Poll(GLFWwindow* _win)
 {
 
-}
+}*/

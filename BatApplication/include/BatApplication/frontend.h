@@ -2,6 +2,7 @@
 #define FRONTEND_H
 
 #include "ProtoEngine\protoengine.h"
+
 class FrontEnd : public BaseState
 {
     public:
@@ -13,6 +14,9 @@ class FrontEnd : public BaseState
         virtual int Update(float deltaTime);
         virtual void Render();
 
+        void MoveUp();
+        void MoveDown();
+
         RenderObject m_background;
         RenderObject m_cursor;
         Camera m_cam;
@@ -20,7 +24,8 @@ class FrontEnd : public BaseState
         Material m_BGMaterial;
         Material m_CursorMaterial;
 
-        glm::vec3 m_CursorPositions[2];
+        u32 m_CursorIndex;
+        glm::vec3 m_CursorPositions[3];
         Entity m_Cursor;
 
         ResourceManager<Texture> textureManager;
@@ -28,6 +33,8 @@ class FrontEnd : public BaseState
         ResourceManager<Mesh> meshManager;
 
         MatrixStack m_mStack;
+        InputState m_InputState;
+
     protected:
     private:
 };

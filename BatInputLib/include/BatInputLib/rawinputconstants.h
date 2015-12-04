@@ -6,7 +6,7 @@ enum eKeyState
     Key_C = 3,
     Key_D = 4,
     Key_E = 5,
-    Key_F = 6
+    Key_F = 6,
     Key_G = 7,
     Key_H = 8,
     Key_I = 9,
@@ -38,4 +38,4 @@ enum eKeyState
     Key_8 = 34,
     Key_9 = 35,
     Key_0 = 36,
-}
+};

@@ -49,7 +49,6 @@
 		</Linker>
 		<Unit filename="include/BatInputLib/BatInput.h" />
 		<Unit filename="include/BatInputLib/input.h" />
-		<Unit filename="include/BatInputLib/inputcontext.h" />
 		<Unit filename="include/BatInputLib/inputsystem.h" />
 		<Unit filename="include/BatInputLib/precompiled.h">
 			<Option compile="1" />
@@ -57,7 +56,6 @@
 		</Unit>
 		<Unit filename="include/BatInputLib/rawinputconstants.h" />
 		<Unit filename="src/input.cpp" />
-		<Unit filename="src/inputcontext.cpp" />
 		<Unit filename="src/inputsystem.cpp" />
 		<Extensions>
 			<code_completion />

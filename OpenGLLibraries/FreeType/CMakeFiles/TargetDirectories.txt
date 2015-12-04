@@ -1,0 +1,2 @@
+C:/OpenGLLibraries/FreeType/CMakeFiles/freetype.dir
+C:/OpenGLLibraries/FreeType/CMakeFiles/dist.dir

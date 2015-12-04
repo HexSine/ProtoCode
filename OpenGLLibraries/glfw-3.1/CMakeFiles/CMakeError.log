@@ -1,0 +1,28 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+1
+Microsoft (R) Build Engine version 4.0.30319.17929
+[Microsoft .NET Framework, version 4.0.30319.18063]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 03/03/2015 8:49:29 PM.
+Project "C:\OpenGLLibraries\glfw-3.1\CMakeFiles\3.2.0-rc2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for CodeBlocks (Platform Toolset = 'CodeBlocks') cannot be found. To build using the CodeBlocks build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install CodeBlocks to build using the CodeBlocks build tools. [C:\OpenGLLibraries\glfw-3.1\CMakeFiles\3.2.0-rc2\CompilerIdC\CompilerIdC.vcxproj]
+Done Building Project "C:\OpenGLLibraries\glfw-3.1\CMakeFiles\3.2.0-rc2\CompilerIdC\CompilerIdC.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\OpenGLLibraries\glfw-3.1\CMakeFiles\3.2.0-rc2\CompilerIdC\CompilerIdC.vcxproj" (default target) (1) ->
+(PlatformPrepareForBuild target) -> 
+  C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for CodeBlocks (Platform Toolset = 'CodeBlocks') cannot be found. To build using the CodeBlocks build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install CodeBlocks to build using the CodeBlocks build tools. [C:\OpenGLLibraries\glfw-3.1\CMakeFiles\3.2.0-rc2\CompilerIdC\CompilerIdC.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.85
+
+

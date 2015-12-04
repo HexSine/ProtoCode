@@ -1,0 +1,308 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/OpenGLLibraries/HolyMolly/CMakeFiles/3.2.0-rc2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/OpenGLLibraries/HolyMolly/CMakeFiles/3.2.0-rc2/CompilerIdCXX/a.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/OpenGLLibraries/HolyMolly/CMakeFiles/3.2.0-rc2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/OpenGLLibraries/HolyMolly/CMakeFiles/3.2.0-rc2/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec55086935/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec55086935.dir\build.make CMakeFiles/cmTryCompileExec55086935.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec55086935.dir/testCCompiler.c.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec55086935.dir\testCCompiler.c.obj   -c C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTryCompileExec55086935.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec55086935.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec55086935.dir/objects.a
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec55086935.dir/objects.a @CMakeFiles\cmTryCompileExec55086935.dir\objects1.rsp
+C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec55086935.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec55086935.exe -Wl,--out-implib,libcmTryCompileExec55086935.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec55086935.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2386607912/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2386607912.dir\build.make CMakeFiles/cmTryCompileExec2386607912.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2386607912.dir/CMakeCCompilerABI.c.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec2386607912.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec2386607912.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2386607912.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec2386607912.dir/objects.a
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec2386607912.dir/objects.a @CMakeFiles\cmTryCompileExec2386607912.dir\objects1.rsp
+C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec2386607912.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec2386607912.exe -Wl,--out-implib,libcmTryCompileExec2386607912.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/lto-wrapper.exe
+Target: mingw32
+Configured with: ../gcc-4.8.1/configure --prefix=/mingw --host=mingw32 --build=mingw32 --without-pic --enable-shared --enable-static --with-gnu-ld --enable-lto --enable-libssp --disable-multilib --enable-languages=c,c++,fortran,objc,obj-c++,ada --disable-sjlj-exceptions --with-dwarf2 --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gmp=/usr/src/pkg/gmp-5.1.2-1-mingw32-src/bld --with-mpc=/usr/src/pkg/mpc-1.0.1-1-mingw32-src/bld --with-mpfr= --with-system-zlib --with-gnu-as --enable-decimal-float=yes --enable-libgomp --enable-threads --with-libiconv-prefix=/mingw32 --with-libintl-prefix=/mingw --disable-bootstrap LDFLAGS=-s CFLAGS=-D_USE_32BIT_TIME_T
+Thread model: win32
+gcc version 4.8.1 (GCC) 
+COMPILER_PATH=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/;c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/
+LIBRARY_PATH=c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2386607912.exe' '-mtune=generic' '-march=pentiumpro'
+ c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe -Bdynamic -o cmTryCompileExec2386607912.exe c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1 -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec2386607912.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec2386607912.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2386607912/fast"]
+  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2386607912.dir\build.make CMakeFiles/cmTryCompileExec2386607912.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp']
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2386607912.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec2386607912.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTryCompileExec2386607912.exe]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2386607912.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec2386607912.dir/objects.a]
+  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec2386607912.dir/objects.a @CMakeFiles\cmTryCompileExec2386607912.dir\objects1.rsp]
+  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec2386607912.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec2386607912.exe -Wl,--out-implib,libcmTryCompileExec2386607912.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../gcc-4.8.1/configure --prefix=/mingw --host=mingw32 --build=mingw32 --without-pic --enable-shared --enable-static --with-gnu-ld --enable-lto --enable-libssp --disable-multilib --enable-languages=c,c++,fortran,objc,obj-c++,ada --disable-sjlj-exceptions --with-dwarf2 --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gmp=/usr/src/pkg/gmp-5.1.2-1-mingw32-src/bld --with-mpc=/usr/src/pkg/mpc-1.0.1-1-mingw32-src/bld --with-mpfr= --with-system-zlib --with-gnu-as --enable-decimal-float=yes --enable-libgomp --enable-threads --with-libiconv-prefix=/mingw32 --with-libintl-prefix=/mingw --disable-bootstrap LDFLAGS=-s CFLAGS=-D_USE_32BIT_TIME_T]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.8.1 (GCC) ]
+  ignore line: [COMPILER_PATH=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2386607912.exe' '-mtune=generic' '-march=pentiumpro']
+  link line: [ c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe -Bdynamic -o cmTryCompileExec2386607912.exe c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1 -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec2386607912.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec2386607912.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o]
+    arg [c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2386607912.exe] ==> ignore
+    arg [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o] ==> ignore
+    arg [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o] ==> ignore
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1]
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc]
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib]
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTryCompileExec2386607912.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTryCompileExec2386607912.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_eh]
+  remove lib [gcc]
+  remove lib [gcc_eh]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.8.1]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/lib]
+  implicit libs: [mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.8.1;c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc;c:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib;c:/Program Files (x86)/CodeBlocks/MinGW/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec599177722/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec599177722.dir\build.make CMakeFiles/cmTryCompileExec599177722.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec599177722.dir/testCXXCompiler.cxx.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE     -o CMakeFiles\cmTryCompileExec599177722.dir\testCXXCompiler.cxx.obj -c C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec599177722.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec599177722.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec599177722.dir/objects.a
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec599177722.dir/objects.a @CMakeFiles\cmTryCompileExec599177722.dir\objects1.rsp
+C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE       -Wl,--whole-archive CMakeFiles\cmTryCompileExec599177722.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec599177722.exe -Wl,--out-implib,libcmTryCompileExec599177722.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec599177722.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1955412430/fast"
+C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1955412430.dir\build.make CMakeFiles/cmTryCompileExec1955412430.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1955412430.dir/CMakeCXXCompilerABI.cpp.obj
+C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE     -o CMakeFiles\cmTryCompileExec1955412430.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec1955412430.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1955412430.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1955412430.dir/objects.a
+C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1955412430.dir/objects.a @CMakeFiles\cmTryCompileExec1955412430.dir\objects1.rsp
+C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1955412430.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1955412430.exe -Wl,--out-implib,libcmTryCompileExec1955412430.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/lto-wrapper.exe
+Target: mingw32
+Configured with: ../gcc-4.8.1/configure --prefix=/mingw --host=mingw32 --build=mingw32 --without-pic --enable-shared --enable-static --with-gnu-ld --enable-lto --enable-libssp --disable-multilib --enable-languages=c,c++,fortran,objc,obj-c++,ada --disable-sjlj-exceptions --with-dwarf2 --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gmp=/usr/src/pkg/gmp-5.1.2-1-mingw32-src/bld --with-mpc=/usr/src/pkg/mpc-1.0.1-1-mingw32-src/bld --with-mpfr= --with-system-zlib --with-gnu-as --enable-decimal-float=yes --enable-libgomp --enable-threads --with-libiconv-prefix=/mingw32 --with-libintl-prefix=/mingw --disable-bootstrap LDFLAGS=-s CFLAGS=-D_USE_32BIT_TIME_T
+Thread model: win32
+gcc version 4.8.1 (GCC) 
+COMPILER_PATH=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/;c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/
+LIBRARY_PATH=c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/;c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1955412430.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+ c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTryCompileExec1955412430.exe c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1 -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec1955412430.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1955412430.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1955412430/fast"]
+  ignore line: [C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1955412430.dir\build.make CMakeFiles/cmTryCompileExec1955412430.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/OpenGLLibraries/HolyMolly/CMakeFiles/CMakeTmp']
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\OpenGLLibraries\HolyMolly\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1955412430.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE     -o CMakeFiles\cmTryCompileExec1955412430.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTryCompileExec1955412430.exe]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1955412430.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1955412430.dir/objects.a]
+  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1955412430.dir/objects.a @CMakeFiles\cmTryCompileExec1955412430.dir\objects1.rsp]
+  ignore line: [C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE      -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1955412430.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1955412430.exe -Wl,--out-implib,libcmTryCompileExec1955412430.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../gcc-4.8.1/configure --prefix=/mingw --host=mingw32 --build=mingw32 --without-pic --enable-shared --enable-static --with-gnu-ld --enable-lto --enable-libssp --disable-multilib --enable-languages=c,c++,fortran,objc,obj-c++,ada --disable-sjlj-exceptions --with-dwarf2 --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gmp=/usr/src/pkg/gmp-5.1.2-1-mingw32-src/bld --with-mpc=/usr/src/pkg/mpc-1.0.1-1-mingw32-src/bld --with-mpfr= --with-system-zlib --with-gnu-as --enable-decimal-float=yes --enable-libgomp --enable-threads --with-libiconv-prefix=/mingw32 --with-libintl-prefix=/mingw --disable-bootstrap LDFLAGS=-s CFLAGS=-D_USE_32BIT_TIME_T]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.8.1 (GCC) ]
+  ignore line: [COMPILER_PATH=c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/]
+  ignore line: [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1955412430.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
+  link line: [ c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTryCompileExec1955412430.exe c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1 -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib -Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec1955412430.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1955412430.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o]
+    arg [c:/progra~2/codebl~1/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-u] ==> ignore
+    arg [___register_frame_info] ==> ignore
+    arg [-u] ==> ignore
+    arg [___deregister_frame_info] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1955412430.exe] ==> ignore
+    arg [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o] ==> ignore
+    arg [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o] ==> ignore
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1]
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc]
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib]
+    arg [-Lc:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..] ==> dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTryCompileExec1955412430.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTryCompileExec1955412430.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.8.1]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib]
+  collapse library dir [c:/progra~2/codebl~1/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..] ==> [c:/Program Files (x86)/CodeBlocks/MinGW/lib]
+  implicit libs: [stdc++;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.8.1;c:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc;c:/Program Files (x86)/CodeBlocks/MinGW/mingw32/lib;c:/Program Files (x86)/CodeBlocks/MinGW/lib]
+  implicit fwks: []
+
+

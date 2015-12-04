@@ -1,0 +1,6 @@
+C:/OpenGLLibraries/HolyMolly/CMakeFiles/glewmx_s.dir
+C:/OpenGLLibraries/HolyMolly/CMakeFiles/glewinfo.dir
+C:/OpenGLLibraries/HolyMolly/CMakeFiles/glew_s.dir
+C:/OpenGLLibraries/HolyMolly/CMakeFiles/glewmx.dir
+C:/OpenGLLibraries/HolyMolly/CMakeFiles/visualinfo.dir
+C:/OpenGLLibraries/HolyMolly/CMakeFiles/glew.dir

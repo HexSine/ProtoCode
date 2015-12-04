@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="freetype" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\builds\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="package">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 package" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="package_source">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 package_source" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="freetype">
+         <Option output="C:/OpenGLLibraries/FreeType/libfreetype.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DFT2_BUILD_LIBRARY" />
+            <Add directory="C:/OpenGLLibraries/FreeType/include" />
+            <Add directory="C:/ProtoCode/freetype-2.6.1/include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 freetype" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="freetype/fast">
+         <Option output="C:/OpenGLLibraries/FreeType/libfreetype.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DFT2_BUILD_LIBRARY" />
+            <Add directory="C:/OpenGLLibraries/FreeType/include" />
+            <Add directory="C:/ProtoCode/freetype-2.6.1/include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+            <Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 freetype/fast" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="dist">
+         <Option working_dir="C:/OpenGLLibraries/FreeType" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 dist" />
+            <CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/OpenGLLibraries/FreeType/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/builds/windows/ftdebug.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/autofit/autofit.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftbase.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftbbox.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftbdf.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftbitmap.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftcid.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftfntfmt.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftfstype.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftgasp.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftglyph.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftgxval.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftinit.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftlcdfil.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftmm.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftotval.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftpatent.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftpfr.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftstroke.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftsynth.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftsystem.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/fttype1.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftwinfnt.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/bdf/bdf.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/bzip2/ftbzip2.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/cache/ftcache.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/cff/cff.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/cid/type1cid.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/gzip/ftgzip.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/lzw/ftlzw.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/pcf/pcf.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/pfr/pfr.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/psaux/psaux.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/pshinter/pshinter.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/psnames/psnames.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/raster/raster.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/sfnt/sfnt.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/smooth/smooth.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/truetype/truetype.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/type1/type1.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/type42/type42.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/winfonts/winfnt.c">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/config/ftconfig.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/config/ftheader.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/config/ftmodule.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/config/ftoption.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/config/ftstdlib.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/freetype.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftadvanc.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftautoh.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftbbox.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftbdf.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftbitmap.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftbzip2.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftcache.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftcffdrv.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftchapters.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftcid.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/fterrdef.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/fterrors.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftfntfmt.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftgasp.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftglyph.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftgxval.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftgzip.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftimage.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftincrem.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftlcdfil.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftlist.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftlzw.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftmac.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftmm.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftmodapi.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftmoderr.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftotval.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftoutln.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftpfr.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftrender.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftsizes.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftsnames.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftstroke.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftsynth.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftsystem.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/fttrigon.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftttdrv.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/fttypes.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ftwinfnt.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/autohint.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftcalc.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftdebug.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftdriver.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftgloadr.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftmemory.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftobjs.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftpic.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftrfork.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftserv.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftstream.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/fttrace.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/ftvalid.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/internal.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/psaux.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/pshints.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/sfnt.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/t1types.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/internal/tttypes.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/t1tables.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ttnameid.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/tttables.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/tttags.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/freetype/ttunpat.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/include/ft2build.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/base/ftbase.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/bdf/bdf.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/pcf/pcf.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/src/winfonts/winfnt.h">
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="C:/ProtoCode/freetype-2.6.1/builds/FindHarfBuzz.cmake">
+          <Option virtualFolder="CMake Files\builds\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

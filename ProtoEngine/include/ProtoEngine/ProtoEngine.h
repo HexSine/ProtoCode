@@ -13,8 +13,6 @@
 
 
 #include "ProtoEngine/application.h"
-#include "ProtoEngine/entity.h"
-#include "ProtoEngine/transform.h"
 #include "ProtoEngine/baseState.h"
 
 

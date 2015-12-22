@@ -12,6 +12,7 @@ class Mesh
 {
     public:
         Mesh(std::string path);
+        Mesh(std::vector<Vertex>& vertices);
 
         virtual ~Mesh();
 
@@ -23,6 +24,9 @@ class Mesh
         u32 m_VertCount;
 
     protected:
+        void GenerateBuffer();
+        void DestroyBuffer();
+        bool isGenerated;
     private:
 };
 

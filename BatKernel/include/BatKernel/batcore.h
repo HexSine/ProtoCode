@@ -10,4 +10,9 @@
 #include "BatKernel/ibatinput.h"
 #include "BatKernel/ibatcomponent.h"
 
+#include "BatKernel/transform.h"
+
+#include "BatKernel/object.h"
+#include "BatKernel/entity.h"
+
 #endif

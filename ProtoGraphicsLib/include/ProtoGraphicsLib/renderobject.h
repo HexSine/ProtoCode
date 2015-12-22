@@ -19,9 +19,6 @@ class RenderObject : public IBatComponent
         glm::vec2 m_Offset;
         glm::vec2 m_Tile;
         glm::ivec2 m_Frame;
-    protected:
-    private:
-        RenderObject(RenderObject& other);
 };
 
 #endif // RENDEROBJECT_H

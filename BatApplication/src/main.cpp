@@ -5,6 +5,7 @@
 #include "ProtoEngine/ProtoEngine.h"
 
 #include "BatApplication/frontend.h"
+#include "BatApplication/gameplay.h"
 /*#include "State/BaseState.h"
 #include "State/FrontEnd.h"
 #include "State/GamePlay.h"
@@ -62,6 +63,9 @@ namespace Proto
             {
             case 1:
                 currentState = new FrontEnd(gSys,input,gameContext);
+                break;
+            case 2:
+                currentState = new Gameplay(gSys,input,gameContext);
                 break;
             }
             if(currentState != NULL)

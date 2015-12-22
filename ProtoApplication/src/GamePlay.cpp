@@ -45,24 +45,6 @@ void GamePlay::Load()
         ++arr;
     }
 
-    /*u32* maptile = m_Map.p_Tiles;
-    for(s32 y = 0; y < m_Map.m_Height;++y)
-    {
-        for(s32 x = 0; x < m_Map.m_Width;++x)
-        {
-            if(*maptile == 2)
-            {
-                Entity* collider = new Entity();
-                collider->p_Collider = new BoxCollider();
-                collider->p_Collider->m_Size = glm::vec2(32,32);
-                glm::vec3 vec = glm::vec3(x * (f32)m_Map.m_tWidth - (f32)m_Map.m_tWidth*(f32)m_Map.m_Width*0.5f,y * (f32)m_Map.m_tHeight - (f32)m_Map.m_tHeight*(f32)m_Map.m_Height + (f32)m_Map.m_tHeight*(f32)m_Map.m_Height*0.5f,0.0f);
-                collider->m_Transform.SetPosition(vec);
-                m_CollisionSys.AddObject(collider,true);
-            }
-            ++maptile;
-        }
-    }*/
-
     m_cam.SetView(glm::vec3(0,0,10),glm::vec3(0,0,0),glm::vec3(0,1,0));
     m_cam.SetOrtho(glm::vec3(0,0,0),640,480,0.1f,100.0f);
 

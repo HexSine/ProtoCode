@@ -59,12 +59,14 @@
 			<Option compile="1" />
 			<Option weight="0" />
 		</Unit>
+		<Unit filename="include/BatKernel/transform.h" />
 		<Unit filename="src/ibatcomponent.cpp" />
 		<Unit filename="src/ibatinput.cpp" />
 		<Unit filename="src/ibatsystem.cpp" />
 		<Unit filename="src/iupdateable.cpp" />
 		<Unit filename="src/matrixstack.cpp" />
 		<Unit filename="src/object.cpp" />
+		<Unit filename="src/transform.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

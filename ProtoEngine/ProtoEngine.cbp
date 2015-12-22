@@ -52,7 +52,6 @@
 		<Unit filename="include/ProtoEngine/Scene/scenenode.h" />
 		<Unit filename="include/ProtoEngine/application.h" />
 		<Unit filename="include/ProtoEngine/basestate.h" />
-		<Unit filename="include/ProtoEngine/entity.h" />
 		<Unit filename="include/ProtoEngine/gamecontext.h" />
 		<Unit filename="include/ProtoEngine/precompiled.h">
 			<Option compile="1" />

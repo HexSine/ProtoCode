@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1449208891 source:c:\protocode\batapplication\src\main.cpp
+1449371824 source:c:\protocode\batapplication\src\main.cpp
 	"BatApplication/precompiled.h"
 	"ProtoEngine/ProtoEngine.h"
 	"BatApplication/frontend.h"
+	"BatApplication/gameplay.h"
 	"State/FrontEnd.h"
 	"State/GamePlay.h"
 	"State/GameContext.h"
 	"State/GameStates.h"
 
-1448685880 c:\protocode\protoengine\include\protoengine\protoengine.h
+1449442044 c:\protocode\protoengine\include\protoengine\protoengine.h
 	"BatKernel/batcore.h"
 	"ProtoGraphicsLib/ProtoGraphicsLib.h"
 	"BatInputLib/BatInput.h"
@@ -16,8 +17,6 @@
 	"ProtoEngine/Scene\scene.h"
 	"ProtoEngine/Scene\scenenode.h"
 	"ProtoEngine/application.h"
-	"ProtoEngine/entity.h"
-	"ProtoEngine/transform.h"
 	"ProtoEngine/baseState.h"
 
 1446780936 c:\protocode\protoengine\include\protoengine\proto_core.h
@@ -505,7 +504,7 @@
 
 1426641119 c:\protocode\protoengine\include\soil.h
 
-1448340122 c:\protocode\batkernel\include\batkernel\batcore.h
+1449442006 c:\protocode\batkernel\include\batkernel\batcore.h
 	<glm/glm.hpp>
 	<stack>
 	"BatKernel/common.h"
@@ -514,6 +513,9 @@
 	"BatKernel/ibatsystem.h"
 	"BatKernel/ibatinput.h"
 	"BatKernel/ibatcomponent.h"
+	"BatKernel/transform.h"
+	"BatKernel/object.h"
+	"BatKernel/entity.h"
 
 1447046720 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -525,7 +527,7 @@
 
 1447222594 c:\protocode\protoengine\include\protoengine\gamecontext.h
 
-1449208263 source:c:\protocode\batapplication\src\frontend.cpp
+1450419690 source:c:\protocode\batapplication\src\frontend.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/frontend.h"
 
@@ -568,13 +570,13 @@
 	"ProtoGraphicsLib/mesh.h"
 	"BatKernel/batcore.h"
 
-1447224166 c:\protocode\protographicslib\include\protographicslib\renderobject.h
+1450761300 c:\protocode\protographicslib\include\protographicslib\renderobject.h
 
 1447048736 c:\protocode\protographicslib\include\protographicslib\shader.h
 
-1446961702 c:\protocode\protographicslib\include\protographicslib\mesh.h
+1449645574 c:\protocode\protographicslib\include\protographicslib\mesh.h
 
-1446623510 c:\protocode\protographicslib\include\protographicslib\camera.h
+1450419599 c:\protocode\protographicslib\include\protographicslib\camera.h
 
 1446958204 c:\protocode\protographicslib\include\protographicslib\material.h
 
@@ -604,4 +606,181 @@
 1448703633 c:\protocode\batinputlib\include\batinputlib\rawinputconstants.h
 
 1449208147 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
+
+1450784245 source:c:\protocode\batapplication\src\gameplay.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/gameplay.h"
+
+1450576035 c:\protocode\batapplication\include\batapplication\gameplay.h
+	"BatApplication/Controllers/objecttracer.h"
+	"BatApplication/Player/character.h"
+	"BatApplication/Map/map.h"
+	"BatApplication/Player/playercontroller.h"
+
+1447221067 c:\protocode\batkernel\include\batkernel\transform.h
+
+1449440636 c:\protocode\batkernel\include\batkernel\object.h
+
+1449442091 c:\protocode\batkernel\include\batkernel\entity.h
+	"BatKernel/object.h"
+
+1450786085 source:c:\protocode\batapplication\src\map\jsonmaploader.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/Map/jsonmaploader.h"
+
+1450757786 c:\protocode\batapplication\include\batapplication\map\jsonmaploader.h
+	"rapidjson/document.h"
+	"rapidjson/writer.h"
+	"rapidjson/stringbuffer.h"
+	"map.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\document.h
+	"reader.h"
+	"internal/meta.h"
+	"internal/strfunc.h"
+	<new>
+	<string>
+	<iterator>
+	<utility>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\reader.h
+	"rapidjson.h"
+	"encodings.h"
+	"internal/meta.h"
+	"internal/stack.h"
+	"internal/strtod.h"
+	<intrin.h>
+	<nmmintrin.h>
+	<emmintrin.h>
+	<stdexcept>
+	"rapidjson/error/error.h"
+	"rapidjson/reader.h"
+	"error/error.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\rapidjson.h
+	<cstdlib>
+	<cstring>
+	"rapidjson/..."
+	"msinttypes/stdint.h"
+	"msinttypes/inttypes.h"
+	<stdint.h>
+	<inttypes.h>
+	<endian.h>
+	"rapidjson/..."
+	<cassert>
+	"allocators.h"
+	"encodings.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\msinttypes\stdint.h
+	<stdint.h>
+	<limits.h>
+	<wchar.h>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\msinttypes\inttypes.h
+	"stdint.h"
+	<inttypes.h>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\allocators.h
+	"rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\encodings.h
+	"rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\meta.h
+	"../rapidjson.h"
+	<type_traits>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\stack.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\strtod.h
+	"../rapidjson.h"
+	"ieee754.h"
+	"biginteger.h"
+	"diyfp.h"
+	"pow10.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\ieee754.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\biginteger.h
+	"../rapidjson.h"
+	<intrin.h>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\diyfp.h
+	"../rapidjson.h"
+	<intrin.h>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\pow10.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\error\error.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\strfunc.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\writer.h
+	"rapidjson.h"
+	"internal/stack.h"
+	"internal/strfunc.h"
+	"internal/dtoa.h"
+	"internal/itoa.h"
+	"stringbuffer.h"
+	<new>
+	<string>
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\dtoa.h
+	"itoa.h"
+	"diyfp.h"
+	"ieee754.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\internal\itoa.h
+	"../rapidjson.h"
+
+1432773147 c:\protocode\batkernel\include\rapidjson\stringbuffer.h
+	"rapidjson.h"
+	<utility>
+	"internal/stack.h"
+
+1450786051 c:\protocode\batapplication\include\batapplication\map\map.h
+
+1449561480 c:\protocode\batapplication\include\batapplication\\map
+
+1450784405 source:c:\protocode\batapplication\src\map\map.cpp
+	"BatApplication/precompiled.h"
+	"ProtoGraphicsLib/mesh.h"
+	"BatApplication/Map/map.h"
+	"BatApplication/Map/jsonmaploader.h"
+
+1450571166 c:\protocode\batapplication\include\batapplication\player\character.h
+	"BatKernel/entity.h"
+	"ProtoGraphicsLib/renderobject.h"
+
+1450571547 source:c:\protocode\batapplication\src\player\character.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/Player/character.h"
+
+1450772268 source:c:\protocode\batapplication\src\playercontroller.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/Player/playercontroller.h"
+
+1450770123 c:\protocode\batapplication\include\batapplication\player\playercontroller.h
+
+1450574201 c:\protocode\batapplication\include\batapplication\controllers\objecttracer.h
+
+1450576532 source:c:\protocode\batapplication\src\controllers\objecttracer.cpp
+	"objecttracer.h"
+
+1450650088 source:c:\protocode\batapplication\src\map\tileset.cpp
+	"tileset.h"
+
+1450650954 c:\protocode\batapplication\include\batapplication\map\tileset.h
+
+1450772260 source:c:\protocode\batapplication\src\map\entityfactory.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/Map/entityfactory.h"
+
+1450769705 c:\protocode\batapplication\include\batapplication\map\entityfactory.h
+	"BatKernel/entity.h"
 

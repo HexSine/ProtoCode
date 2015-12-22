@@ -66,7 +66,16 @@ void InputSystem::UpdateButtons()
 
 bool InputSystem::GetButton(u32 key)
 {
-    return true;
+    bool ret = false;
+    if(p_State)
+    {
+        KeyMap::iterator iter = p_State->m_KeyMap.find(key);
+        if(iter != p_State->m_KeyMap.end())
+        {
+            ret = (*iter).second & keyState::kDown;
+        }
+    }
+    return ret;
 }
 bool InputSystem::GetButtonDown(u32 key)
 {
@@ -83,5 +92,14 @@ bool InputSystem::GetButtonDown(u32 key)
 }
 bool InputSystem::GetButtonUp(u32 key)
 {
-    return true;
+    bool ret = false;
+    if(p_State)
+    {
+        KeyMap::iterator iter = p_State->m_KeyMap.find(key);
+        if(iter != p_State->m_KeyMap.end())
+        {
+            ret = (*iter).second & keyState::kRelease;
+        }
+    }
+    return ret;
 }

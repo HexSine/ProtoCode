@@ -1,7 +1,7 @@
 #include "ProtoGraphicsLib/precompiled.h"
 #include "ProtoGraphicsLib/mesh.h"
 
-Mesh::Mesh(std::string path) : m_vertexID(0), m_VertCount(0)
+Mesh::Mesh(std::string path) : m_vertexID(0), m_VertCount(0), isGenerated(false)
 {
 
     FILE* file = fopen(path.c_str(), "r");
@@ -27,7 +27,6 @@ Mesh::Mesh(std::string path) : m_vertexID(0), m_VertCount(0)
             glm::vec3 vertex;
             fscanf(file,"%f %f %f\n", &vertex.x,&vertex.y,&vertex.z);
             vertices.push_back(vertex);
-            ++m_VertCount;
         }
         else if(strcmp(lineHeader,"vt") == 0)
         {
@@ -72,7 +71,7 @@ Mesh::Mesh(std::string path) : m_vertexID(0), m_VertCount(0)
         m_vertices.push_back(vertex);
 
     }
-
+    m_VertCount = m_vertices.size();
 
     glGenVertexArrays(1,&m_vertexID);
     glBindVertexArray(m_vertexID);
@@ -81,8 +80,38 @@ Mesh::Mesh(std::string path) : m_vertexID(0), m_VertCount(0)
     glBindBuffer(GL_ARRAY_BUFFER, m_vertexID);
     glBufferData(GL_ARRAY_BUFFER,sizeof(Vertex) * m_vertices.size(),&m_vertices[0],GL_STATIC_DRAW);
 }
+
+Mesh::Mesh(std::vector<Vertex>& vertices) : m_vertexID(0), m_VertCount(vertices.size()), isGenerated(false)
+{
+    m_vertices = vertices;
+
+    GenerateBuffer();
+
+}
 Mesh::~Mesh()
 {
+    if(isGenerated)
+    {
+        DestroyBuffer();
+    }
+}
+void Mesh::DestroyBuffer()
+{
+    glDeleteBuffers(1,&m_vertexID);
+    glDeleteVertexArrays(1,&m_vertexID);
+}
 
-    //dtor
+void Mesh::GenerateBuffer()
+{
+    if(isGenerated)
+    {
+        DestroyBuffer();
+    }
+    glGenVertexArrays(1,&m_vertexID);
+    glBindVertexArray(m_vertexID);
+
+    glGenBuffers(1, &m_vertexID);
+    glBindBuffer(GL_ARRAY_BUFFER, m_vertexID);
+    glBufferData(GL_ARRAY_BUFFER,sizeof(Vertex) * m_vertices.size(),&m_vertices[0],GL_STATIC_DRAW);
+    isGenerated = true;
 }

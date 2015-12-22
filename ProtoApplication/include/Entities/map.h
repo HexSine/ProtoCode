@@ -5,7 +5,7 @@
 class Map
 {
     public:
-        Map();
+        Map(std::string path);
         virtual ~Map();
         void SetMapSize(u32 width, u32 height);
         void SetTileSize(u32 width, u32 height);

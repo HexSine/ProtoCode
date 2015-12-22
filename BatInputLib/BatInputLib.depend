@@ -25,7 +25,7 @@
 	<SOIL.h>
 	"BatKernel/batcore.h"
 
-1448340122 c:\protocode\batkernel\include\batkernel\batcore.h
+1449442006 c:\protocode\batkernel\include\batkernel\batcore.h
 	<glm/glm.hpp>
 	<stack>
 	"BatKernel/common.h"
@@ -34,6 +34,9 @@
 	"BatKernel/ibatsystem.h"
 	"BatKernel/ibatinput.h"
 	"BatKernel/ibatcomponent.h"
+	"BatKernel/transform.h"
+	"BatKernel/object.h"
+	"BatKernel/entity.h"
 
 1447046720 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -120,4 +123,11 @@
 1448703433 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
 
 1449208147 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
+
+1447221067 c:\protocode\batkernel\include\batkernel\transform.h
+
+1449440636 c:\protocode\batkernel\include\batkernel\object.h
+
+1449442091 c:\protocode\batkernel\include\batkernel\entity.h
+	"BatKernel/object.h"
 

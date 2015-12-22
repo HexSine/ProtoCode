@@ -8,9 +8,10 @@ class Object
         Object();
         virtual ~Object();
 
-        virtual void Init();
-        virtual void Terminate();
-        virtual void Update();
+        virtual void Init() = 0;
+        virtual void Terminate() = 0;
+        virtual void Update() = 0;
+        virtual void Render() = 0;
     protected:
     private:
 };

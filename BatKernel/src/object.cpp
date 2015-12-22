@@ -1,4 +1,5 @@
-#include "object.h"
+#include "BatKernel/precompiled.h"
+#include "BatKernel/object.h"
 
 Object::Object()
 {

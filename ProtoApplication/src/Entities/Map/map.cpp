@@ -1,8 +1,7 @@
 #include "map.h"
 
-Map::Map() : p_Tiles(NULL), m_Width(0), m_Height(0),m_tWidth(0),m_tHeight(0)
+Map::Map() : m_Width(0), m_Height(0),m_tWidth(0),m_tHeight(0),p_Tiles(NULL)
 {
-    //ctor
 }
 
 Map::~Map()

@@ -48,7 +48,7 @@ void GraphicsSystem::DrawRenderObject(const IBatComponent& target, glm::mat4 MVP
     tileOfffset.y = tileOfffset.y + renObj.m_Tile.y * renObj.m_Frame.y;
     glUniform2fv(OffsetID,1,&tileOfffset[0]);
 
-    glDrawArrays(GL_TRIANGLES,0,6);
+    glDrawArrays(GL_TRIANGLES,0,renObj.p_Mesh->m_VertCount);
 
     glDisableVertexAttribArray(0);
     glDisableVertexAttribArray(1);

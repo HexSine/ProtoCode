@@ -76,7 +76,7 @@ int FrontEnd::Update(float deltaTime)
     }
     if(m_InputSystem.GetButtonDown(GLFW_KEY_ENTER))
     {
-        ret = 1;
+        ret = 2;
     }
     return ret;
 }
@@ -86,7 +86,7 @@ void FrontEnd::Render()
     m_GraphicsSystem.DrawRenderObject(m_background,m_mStack.GetMatrix());
 
     m_mStack.PushMatrix(m_cam.m_Projection);
-    m_mStack.PushMatrix(m_cam.m_View);
+    m_mStack.PushMatrix(m_cam.m_Transform.m_transform);
 
     glm::mat4 scaleMat(16.0f);
     scaleMat[3][3] = 1;

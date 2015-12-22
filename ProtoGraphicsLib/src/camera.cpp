@@ -8,7 +8,7 @@ Camera::Camera()
 void Camera::SetView(glm::vec3 position, glm::vec3 target, glm::vec3 up)
 {
     m_Projection = glm::perspective(45.0f,4.0f/3.0f,0.1f,100.0f);
-    m_View = glm::lookAt(position,target,up );
+    m_Transform.m_transform = glm::lookAt(position,target,up );
 }
 void Camera::SetPerspective(float _fov,float _aspect,float _near, float _far)
 {

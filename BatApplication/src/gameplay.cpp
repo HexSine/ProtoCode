@@ -42,9 +42,24 @@ void Gameplay::Load()
 
     p_Map = m_MapManager.GetPtr(URImap);
     u32 c = p_Map->m_Layers.size();
+
+    float t = 32.0f/256.0f;
     for(u32 i = 0; i < c; ++i)
     {
-        p_Map->m_Layers[i].m_Renderable.p_Material = &m_MapMaterial;
+        Layer& layer = p_Map->m_Layers[i];
+        u32& lType = layer.m_Type;
+
+        if(lType < 2)
+        {
+            RenderObject* renObj = new RenderObject;
+
+            renObj->Init();
+            renObj->m_Tile = glm::vec2(t,t);
+            renObj->m_Offset = glm::vec2(0.0f,224.0f/256.0f);
+            renObj->p_Material = &m_MapMaterial;
+            p_Map->GenerateLayerMesh(layer,*renObj);
+            m_Renderables.push_back(renObj);
+        }
     }
 
     m_Bat.m_Transform.Translate(0,-128,1);
@@ -73,22 +88,6 @@ int Gameplay::Update(float deltaTime)
     int ret = 0;
     m_CameraController.Update();
     m_Controller.Update(deltaTime);
-    if(m_InputSystem.GetButton(GLFW_KEY_RIGHT))
-    {
-        m_cam.m_Transform.Translate(100 * deltaTime,0,0);
-    }
-    if(m_InputSystem.GetButton(GLFW_KEY_LEFT))
-    {
-        m_cam.m_Transform.Translate(-100 * deltaTime,0,0);
-    }
-    if(m_InputSystem.GetButton(GLFW_KEY_UP))
-    {
-        m_cam.m_Transform.Translate(0,100 * deltaTime,0);
-    }
-    if(m_InputSystem.GetButton(GLFW_KEY_DOWN))
-    {
-        m_cam.m_Transform.Translate(0,-100 * deltaTime,0);
-    }
     return ret;
 }
 void Gameplay::Render()
@@ -101,10 +100,10 @@ void Gameplay::Render()
     m_mStack.PushMatrix(m_cam.m_Projection);
     m_mStack.PushMatrix(m_cam.m_Transform.m_transform);
 
-    u32 c = p_Map->m_Layers.size();
+    u32 c = m_Renderables.size();
     for(u32 i = 0; i < c; ++i)
     {
-         m_GraphicsSystem.DrawRenderObject(p_Map->m_Layers[i].m_Renderable,m_mStack.GetMatrix());
+         m_GraphicsSystem.DrawRenderObject(*m_Renderables[i],m_mStack.GetMatrix());
     }
 
 

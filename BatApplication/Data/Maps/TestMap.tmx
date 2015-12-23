@@ -3,10 +3,7 @@
  <tileset firstgid="1" name="tileset_brick" tilewidth="32" tileheight="32">
   <image source="../Textures/Map/tileset_brick.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="65" name="tileset_cave" tilewidth="32" tileheight="32">
-  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
- </tileset>
- <tileset firstgid="129" name="Entity" tilewidth="32" tileheight="32">
+ <tileset firstgid="65" name="Entity" tilewidth="32" tileheight="32">
   <tile id="0">
    <properties>
     <property name="id" value="1"/>
@@ -19,6 +16,9 @@
    </properties>
    <image width="32" height="32" source="../Textures/Characters/knight.png"/>
   </tile>
+ </tileset>
+ <tileset firstgid="67" name="tileset_cave" tilewidth="32" tileheight="32">
+  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
  </tileset>
  <layer name="BackGround" width="34" height="9">
   <properties>
@@ -823,7 +823,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="129"/>
+   <tile gid="65"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>

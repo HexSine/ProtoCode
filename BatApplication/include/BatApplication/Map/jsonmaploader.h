@@ -13,6 +13,7 @@ class JSONMapLoader
         JSONMapLoader();
         ~JSONMapLoader();
         bool Parse(const char* path);
+        void ReadLayers(Value& inValue);
         std::vector<Layer> m_Layers;
 
         u32 m_w, m_h, m_tw, m_th;

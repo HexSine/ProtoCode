@@ -13,17 +13,6 @@ Map::Map(std::string path) : m_Width(0), m_Height(0),m_tWidth(0),m_tHeight(0)
     m_tHeight = maploader.m_th;
     m_tWidth = maploader.m_tw;
     m_Layers = maploader.m_Layers;
-    //p_Tiles = new u32[m_Width * m_Height];
-    //memcpy(p_Tiles,maploader.p_id,sizeof(u32) * m_Width * m_Height);
-    u32 c = m_Layers.size();
-    for(u32 i = 0; i < c; ++i)
-    {
-        Layer& layer = m_Layers[i];
-        if(layer.m_Type == "0")
-        {
-            GenerateLayerMesh(layer);
-        }
-    }
 }
 
 Map::~Map()
@@ -31,17 +20,8 @@ Map::~Map()
 }
 void Map::Init()
 {
-    float t = 32.0f/256.0f;
-    u32 c = m_Layers.size();
-    for(u32 i = 0; i < c; ++i)
-    {
-        RenderObject renderable = m_Layers[i].m_Renderable;
-        renderable.Init();
-        renderable.m_Tile = glm::vec2(t,t);
-        renderable.m_Offset = glm::vec2(0.0f,224.0f/256.0f);
-    }
 }
-void Map::GenerateLayerMesh(Layer& layer)
+void Map::GenerateLayerMesh(Layer& layer, RenderObject& entity)
 {
     u32 vertIndex = 0;
     std::vector<Vertex> vertices(m_Width * m_Height * 6);
@@ -87,5 +67,5 @@ void Map::GenerateLayerMesh(Layer& layer)
         }
     }
 
-    layer.m_Renderable.p_Mesh = new Mesh(vertices);
+    entity.p_Mesh = new Mesh(vertices);
 }

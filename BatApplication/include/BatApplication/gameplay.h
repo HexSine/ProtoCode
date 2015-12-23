@@ -36,6 +36,7 @@ class Gameplay : public BaseState
         ObjectTracer m_CameraController;
 
         //Entitys
+        std::vector<RenderObject*> m_Renderables;
         Map* p_Map;
         Character m_Bat;
 

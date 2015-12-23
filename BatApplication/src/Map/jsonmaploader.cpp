@@ -1,7 +1,6 @@
 #include "BatApplication/precompiled.h"
 #include "BatApplication/Map/jsonmaploader.h"
 
-static void ReadLayers(Value& inValue,std::vector<Layer>& outLayers);
 
 JSONMapLoader::JSONMapLoader()
 {
@@ -33,7 +32,7 @@ bool JSONMapLoader::Parse(const char* path)
     //Set all the id's
     //p_id = new u32[m_w * m_h];
     Value& layers = m_Doc["layers"];
-    ReadLayers(layers,m_Layers);
+    ReadLayers(layers);
 
     //Get Texture paths
     Value& tileSheet = m_Doc["tilesets"][0];
@@ -43,7 +42,7 @@ bool JSONMapLoader::Parse(const char* path)
     return true;
 
 }
-static void ReadLayers(Value& inValue,std::vector<Layer>& outLayers)
+void JSONMapLoader::ReadLayers(Value& inValue)
 {
     u32 c = inValue.Size();
     for(u32 i = 0; i < c; ++i)
@@ -52,7 +51,7 @@ static void ReadLayers(Value& inValue,std::vector<Layer>& outLayers)
         Value& vData = vLayer["data"];
 
         Layer layer;
-        layer.m_Type = vLayer["properties"]["layerType"].GetString();
+        layer.m_Type = atoi(vLayer["properties"]["layerType"].GetString());
         u32 dSize = vData.Size();
         layer.m_Tiles.resize(dSize);
 
@@ -60,6 +59,6 @@ static void ReadLayers(Value& inValue,std::vector<Layer>& outLayers)
         {
             layer.m_Tiles[iter] = vData[iter].GetUint();
         }
-        outLayers.push_back(layer);
+        m_Layers.push_back(layer);
     }
 }

@@ -59,7 +59,7 @@
 
 1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
 
-1448340122 source:c:\protocode\batkernel\include\batkernel\batcore.h
+1449442006 source:c:\protocode\batkernel\include\batkernel\batcore.h
 	<glm/glm.hpp>
 	<stack>
 	"BatKernel/common.h"
@@ -68,6 +68,9 @@
 	"BatKernel/ibatsystem.h"
 	"BatKernel/ibatinput.h"
 	"BatKernel/ibatcomponent.h"
+	"BatKernel/transform.h"
+	"BatKernel/object.h"
+	"BatKernel/entity.h"
 
 1447046720 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -123,7 +126,7 @@
 
 1447221067 c:\protocode\batkernel\include\batkernel\transform.h
 
-1449441814 c:\protocode\batkernel\include\batkernel\entity.h
+1449442091 c:\protocode\batkernel\include\batkernel\entity.h
 	"BatKernel/object.h"
 
 1449440636 c:\protocode\batkernel\include\batkernel\object.h

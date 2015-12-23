@@ -54,8 +54,8 @@ void Gameplay::Load()
             RenderObject* renObj = new RenderObject;
 
             renObj->Init();
-            renObj->m_Tile = glm::vec2(t,t);
-            renObj->m_Offset = glm::vec2(0.0f,224.0f/256.0f);
+            //renObj->m_Tile = glm::vec2(t,t);
+            //renObj->m_Offset = glm::vec2(0.0f,224.0f/256.0f);
             renObj->p_Material = &m_MapMaterial;
             p_Map->GenerateLayerMesh(layer,*renObj);
             m_Renderables.push_back(renObj);

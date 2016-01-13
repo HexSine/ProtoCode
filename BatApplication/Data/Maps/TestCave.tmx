@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="CaveTile" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="cave_decor" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../Textures/Map/tileset_cave_decor.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7Dd+BeMjAXSKmgCAAAAAABcNO0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8tcgjAAs=
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt10EKwjAURdGv1oG6A4fuwP1vzgqFRkhstdEGeg48EJwULklpBAAAALB1u377YYeVn4WIU7/zsMvKz7Il1xjPQW5d6PEvzxa3GM9Bacd4beT+qm9ui9ycl7pKLdK7q8v8r0ddU++KuedFj+/ck99L7ic9Ppd+LyzZu3tKj/nS74VfT49perRFj7bo0RY92qJHW/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEoewz0Mkw==
+  </data>
+ </layer>
+ <layer name="decor" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1jkKwDAMBEB9zUf+/yVjcOpgDFHhmUbtItARAQAAAEC2nh0AYFPJDnCpeS/e3j+ZQeBnX7/SnIu2ag07CgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4NwABmALc
+  </data>
+ </layer>
+ <layer name="wizardlayer" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAMAiDLrX+lfVbwgQQkAAAAAKzdOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAPfp3AEY=
+  </data>
+ </layer>
+</map>

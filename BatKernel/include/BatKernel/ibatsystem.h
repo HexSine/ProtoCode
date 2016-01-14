@@ -8,7 +8,7 @@ class IBatGraphicsSystem
         IBatGraphicsSystem();
         virtual ~IBatGraphicsSystem();
 
-        virtual bool Initialize() = 0;
+        virtual bool Initialize(ResourceManager* resSystem) = 0;
         virtual void DrawRenderObject(const IBatComponent& target,glm::mat4 matrix) = 0;
     protected:
     private:

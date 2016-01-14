@@ -14,7 +14,7 @@
 #include <map>
 #include <string>
 #include <exception>
-
+#include "BatKernel/Resource/resource.h"
 typedef const std::string URI;
 
 // exceptions
@@ -36,7 +36,7 @@ namespace Exceptions {
 	};
 }
 
-template <class Resource> class ResourceManager {
+class ResourceManager {
 	typedef typename std::pair<URI, Resource*> ResourcePair;
 	typedef typename std::map<URI, Resource*> ResourceList;
 
@@ -47,6 +47,7 @@ public:
 
 	// Load a resource with the specified URI
 	// the URI could represent, e.g, a filename
+	template <class T>
 	URI& Load(URI& Uri);
 	// unload a resource with the specified URI
 	void Unload(URI& Uri);
@@ -54,13 +55,15 @@ public:
 	void UnloadAll();
 
 	// get a pointer to a resource
-	Resource* GetPtr(URI& Uri);
+	template <class T>
+	T* GetPtr(URI& Uri);
 	// get a reference to a resource
-	Resource& Get(URI& Uri);
+	template <class T>
+	T& Get(URI& Uri);
 };
 
-template <class Resource>
-URI& ResourceManager<Resource>::Load(URI& Uri)
+template <class T>
+URI& ResourceManager::Load(URI& Uri)
 {
 	// check if resource URI is already in list
 	// and if it is, we do no more
@@ -70,7 +73,7 @@ URI& ResourceManager<Resource>::Load(URI& Uri)
 		// NB: if the Resource template argument does not have a
 		// constructor accepting a const std::std::string, then this
 		// line will cause a compiler error
-		Resource* temp = new (std::nothrow) Resource(Uri);
+		Resource* temp = new (std::nothrow) T(Uri);
 		// check if the resource failed to be allocated
 		// std::nothrow means that if allocation failed
 		// temp will be 0
@@ -82,8 +85,7 @@ URI& ResourceManager<Resource>::Load(URI& Uri)
 	return Uri;
 }
 
-template <class Resource>
-void ResourceManager<Resource>::Unload(URI& Uri)
+inline void ResourceManager::Unload(URI& Uri)
 {
 	// try to find the specified URI in the list
 	typename ResourceList::const_iterator itr = Resources.find(Uri);
@@ -97,8 +99,7 @@ void ResourceManager<Resource>::Unload(URI& Uri)
 	}
 }
 
-template <class Resource>
-void ResourceManager<Resource>::UnloadAll()
+inline void ResourceManager::UnloadAll()
 {
 	// iterate through every element of the resource list
 	typename ResourceList::iterator itr;
@@ -109,24 +110,25 @@ void ResourceManager<Resource>::UnloadAll()
 	Resources.clear();
 }
 
-template <class Resource>
-Resource* ResourceManager<Resource>::GetPtr(URI& Uri)
+template <class T>
+T* ResourceManager::GetPtr(URI& Uri)
 {
 	// find the specified URI in the list
 	typename ResourceList::const_iterator itr;
 	// if it is there...
-	if ((itr = Resources.find(Uri)) != Resources.end())
+	itr = Resources.find(Uri);
+	if (itr != Resources.end())
 		// ... return a pointer to the corresponding resource
-		return itr->second;
+		return (T*)itr->second;
 	// ... else return 0
 	return 0;
 }
 
-template <class Resource>
-Resource& ResourceManager<Resource>::Get(URI& Uri)
+template <class T>
+T& ResourceManager::Get(URI& Uri)
 {
 	// get a pointer to the resource
-	Resource* temp = GetPtr(Uri);
+	T* temp = GetPtr<T>(Uri);
 	// if the resource was found...
 	if (temp)
 		// ... dereference the pointer to return a reference

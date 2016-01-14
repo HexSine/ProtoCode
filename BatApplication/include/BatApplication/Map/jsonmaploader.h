@@ -14,7 +14,9 @@ class JSONMapLoader
         ~JSONMapLoader();
         bool Parse(const char* path);
         void ReadLayers(Value& inValue);
+        void ReadTileSets(Value& inValue);
         std::vector<Layer> m_Layers;
+        std::vector<TileSet> m_TileSets;
 
         u32 m_w, m_h, m_tw, m_th;
         glm::vec2 m_ImageDimensions;

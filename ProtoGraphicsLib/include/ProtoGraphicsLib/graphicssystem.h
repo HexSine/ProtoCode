@@ -17,10 +17,11 @@ class GraphicsSystem : public IBatGraphicsSystem
         virtual ~GraphicsSystem();
 
         virtual void DrawRenderObject(const IBatComponent& target,glm::mat4 matrix);
-        virtual bool Initialize();
+        virtual bool Initialize(ResourceManager* resSystem);
         //virtual void DrawRenderObject(const RenderObject& target,glm::mat4 matrix);
 
     protected:
+        ResourceManager* m_ResourceData;
     private:
 };
 

@@ -5,10 +5,13 @@
 #include "BatApplication/Player/character.h"
 #include "BatApplication/Map/map.h"
 #include "BatApplication/Player/playercontroller.h"
+
+#include "BatApplication/Map/entityfactory.h"
+
 class Gameplay : public BaseState
 {
     public:
-        Gameplay(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,GameContext& gc);
+        Gameplay(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,ResourceManager& resSystem,GameContext& gc);
         virtual ~Gameplay();
 
         virtual void Load();
@@ -16,17 +19,12 @@ class Gameplay : public BaseState
         virtual int Update(float deltaTime);
         virtual void Render();
 
+        void SpawnLayer(Layer& layer);
+
+        void CreateMapObjects(std::vector<u32>& ids);
+
         RenderObject m_background;
         Camera m_cam;
-
-        Material m_BGMaterial;
-        Material m_MapMaterial;
-        Material m_BatMaterial;
-
-        ResourceManager<Texture> textureManager;
-        ResourceManager<Shader> shaderManager;
-        ResourceManager<Mesh> meshManager;
-        ResourceManager<Map> m_MapManager;
 
         MatrixStack m_mStack;
         InputState m_InputState;
@@ -36,6 +34,7 @@ class Gameplay : public BaseState
         ObjectTracer m_CameraController;
 
         //Entitys
+        EntityFactory mEntFactory;
         std::vector<RenderObject*> m_Renderables;
         Map* p_Map;
         Character m_Bat;

@@ -17,7 +17,6 @@
 					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add directory="include" />
-					<Add directory="include/BatKernel/" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,7 +30,6 @@
 					<Add option="-O2" />
 					<Add option="-Wall" />
 					<Add directory="include" />
-					<Add directory="include/BatKernel/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -44,11 +42,13 @@
 			<Add directory="include" />
 		</Compiler>
 		<Unit filename="include/BatKernel/Graphics/igraphicssystem.h" />
+		<Unit filename="include/BatKernel/Resource/resource.h" />
 		<Unit filename="include/BatKernel/Resource/resourcemanager.hpp" />
 		<Unit filename="include/BatKernel/batcore.h">
 			<Option compile="1" />
 		</Unit>
 		<Unit filename="include/BatKernel/common.h" />
+		<Unit filename="include/BatKernel/entity.h" />
 		<Unit filename="include/BatKernel/ibatcomponent.h" />
 		<Unit filename="include/BatKernel/ibatinput.h" />
 		<Unit filename="include/BatKernel/ibatsystem.h" />
@@ -60,6 +60,8 @@
 			<Option weight="0" />
 		</Unit>
 		<Unit filename="include/BatKernel/transform.h" />
+		<Unit filename="src/Resource/resource.cpp" />
+		<Unit filename="src/entity.cpp" />
 		<Unit filename="src/ibatcomponent.cpp" />
 		<Unit filename="src/ibatinput.cpp" />
 		<Unit filename="src/ibatsystem.cpp" />

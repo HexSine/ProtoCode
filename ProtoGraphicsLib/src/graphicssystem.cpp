@@ -6,6 +6,8 @@
 #include "ProtoGraphicsLib/renderobject.h"
 #include "ProtoGraphicsLib/mesh.h"
 #include "ProtoGraphicsLib/material.h"
+#include "ProtoGraphicsLib/texture.h"
+#include "ProtoGraphicsLib/shader.h"
 GraphicsSystem::GraphicsSystem()
 {
     //ctor
@@ -15,8 +17,9 @@ GraphicsSystem::~GraphicsSystem()
 {
     //dtor
 }
-bool GraphicsSystem::Initialize()
+bool GraphicsSystem::Initialize(ResourceManager* resSystem)
 {
+    m_ResourceData = resSystem;
     return true;
 }
 void GraphicsSystem::DrawRenderObject(const IBatComponent& target, glm::mat4 MVP)
@@ -25,9 +28,12 @@ void GraphicsSystem::DrawRenderObject(const IBatComponent& target, glm::mat4 MVP
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
     glEnableVertexAttribArray(2);
-    glBindBuffer(GL_ARRAY_BUFFER, renObj.p_Mesh->m_vertexID);
 
-    glBindTexture(GL_TEXTURE_2D, renObj.p_Material->m_TextureID);
+    Texture& texture = m_ResourceData->Get<Texture>(renObj.p_Material->m_TextureID);
+    Shader& shader = m_ResourceData->Get<Shader>(renObj.p_Material->m_ProgramID);
+
+    glBindBuffer(GL_ARRAY_BUFFER, renObj.p_Mesh->m_vertexID);
+    glBindTexture(GL_TEXTURE_2D, texture.m_TextureID);
 
     //glTexImage2D(GL_TEXTURE_2D,0,GL_RG,32,16,0,GL_BGR,GL_UNSIGNED_BYTE,
 
@@ -36,10 +42,9 @@ void GraphicsSystem::DrawRenderObject(const IBatComponent& target, glm::mat4 MVP
     glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE,sizeof(Vertex),(void*)(6 * sizeof(f32)));
 
 
-
-    GLuint matrixID = glGetUniformLocation(renObj.p_Material->m_ProgramID, "MVP");
-    GLuint TileID = glGetUniformLocation(renObj.p_Material->m_ProgramID, "Tile");
-    GLuint OffsetID = glGetUniformLocation(renObj.p_Material->m_ProgramID, "Offset");
+    GLuint matrixID = glGetUniformLocation(shader.m_ProgramID, "MVP");
+    GLuint TileID = glGetUniformLocation(shader.m_ProgramID, "Tile");
+    GLuint OffsetID = glGetUniformLocation(shader.m_ProgramID, "Offset");
     glUniformMatrix4fv(matrixID,1,GL_FALSE, &MVP[0][0]);
     glUniform2fv(TileID,1,&renObj.m_Tile[0]);
 

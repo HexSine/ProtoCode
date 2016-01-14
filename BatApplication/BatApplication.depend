@@ -1,41 +1,4 @@
 # depslib dependency file v1.0
-1449371824 source:c:\protocode\batapplication\src\main.cpp
-	"BatApplication/precompiled.h"
-	"ProtoEngine/ProtoEngine.h"
-	"BatApplication/frontend.h"
-	"BatApplication/gameplay.h"
-	"State/FrontEnd.h"
-	"State/GamePlay.h"
-	"State/GameContext.h"
-	"State/GameStates.h"
-
-1449442044 c:\protocode\protoengine\include\protoengine\protoengine.h
-	"BatKernel/batcore.h"
-	"ProtoGraphicsLib/ProtoGraphicsLib.h"
-	"BatInputLib/BatInput.h"
-	"ProtoEngine/proto_core.h"
-	"ProtoEngine/Scene\scene.h"
-	"ProtoEngine/Scene\scenenode.h"
-	"ProtoEngine/application.h"
-	"ProtoEngine/baseState.h"
-
-1446780936 c:\protocode\protoengine\include\protoengine\proto_core.h
-
-1432804871 c:\protocode\protoengine\include\protoengine\scene\scene.h
-	"ProtoEngine\Scene\scenenode.h"
-
-1432805512 c:\protocode\protoengine\include\protoengine\scene\scenenode.h
-
-1447229572 c:\protocode\protoengine\include\protoengine\application.h
-
-1447042678 c:\protocode\protoengine\include\protoengine\entity.h
-	"transform.h"
-	"Physics/collisionsystem.h"
-
-1447221067 c:\protocode\protoengine\include\protoengine\transform.h
-
-1432040879 c:\protocode\protoengine\include\protoengine\physics\collisionsystem.h
-
 1448749246 source:c:\protocode\batapplication\include\batapplication\precompiled.h
 	<iostream>
 	<string>
@@ -504,7 +467,17 @@
 
 1426641119 c:\protocode\protoengine\include\soil.h
 
-1449442006 c:\protocode\batkernel\include\batkernel\batcore.h
+1449442044 c:\protocode\protoengine\include\protoengine\protoengine.h
+	"BatKernel/batcore.h"
+	"ProtoGraphicsLib/ProtoGraphicsLib.h"
+	"BatInputLib/BatInput.h"
+	"ProtoEngine/proto_core.h"
+	"ProtoEngine/Scene\scene.h"
+	"ProtoEngine/Scene\scenenode.h"
+	"ProtoEngine/application.h"
+	"ProtoEngine/baseState.h"
+
+1452387070 c:\protocode\batkernel\include\batkernel\batcore.h
 	<glm/glm.hpp>
 	<stack>
 	"BatKernel/common.h"
@@ -517,19 +490,94 @@
 	"BatKernel/object.h"
 	"BatKernel/entity.h"
 
-1447046720 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
+1447299413 c:\protocode\batkernel\include\batkernel\common.h
+
+1452416079 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
 	<string>
 	<exception>
+	"BatKernel/Resource/resource.h"
 
-1447298236 c:\protocode\protoengine\include\protoengine\basestate.h
+1452321305 c:\protocode\batkernel\include\batkernel\resource\resource.h
+
+1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
+
+1452387182 c:\protocode\batkernel\include\batkernel\ibatsystem.h
+	"BatKernel/ibatcomponent.h"
+
+1447223494 c:\protocode\batkernel\include\batkernel\ibatcomponent.h
+
+1449208242 c:\protocode\batkernel\include\batkernel\ibatinput.h
+
+1447221067 c:\protocode\batkernel\include\batkernel\transform.h
+
+1452321257 c:\protocode\batkernel\include\batkernel\object.h
+
+1452377104 c:\protocode\batkernel\include\batkernel\entity.h
+	"BatKernel/object.h"
+
+1447022459 c:\protocode\protographicslib\include\protographicslib\protographicslib.h
+	"ProtoGraphicsLib/graphicssystem.h"
+	"ProtoGraphicsLib/camera.h"
+	"ProtoGraphicsLib/material.h"
+	"ProtoGraphicsLib/renderobject.h"
+	"ProtoGraphicsLib/texture.h"
+
+1452387284 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
+	"renderobject.h"
+	"ProtoGraphicsLib/shader.h"
+	"ProtoGraphicsLib/mesh.h"
+	"BatKernel/batcore.h"
+
+1450761300 c:\protocode\protographicslib\include\protographicslib\renderobject.h
+
+1452321488 c:\protocode\protographicslib\include\protographicslib\shader.h
+	"BatKernel/Resource/resource.h"
+
+1452321468 c:\protocode\protographicslib\include\protographicslib\mesh.h
+	"BatKernel/Resource/resource.h"
+
+1450419599 c:\protocode\protographicslib\include\protographicslib\camera.h
+
+1452374145 c:\protocode\protographicslib\include\protographicslib\material.h
+	"BatKernel/Resource/resource.h"
+
+1452321432 c:\protocode\protographicslib\include\protographicslib\texture.h
+	"BatKernel/Resource/resource.h"
+
+1448685684 c:\protocode\batinputlib\include\batinputlib\batinput.h
+	"BatInputLib/rawinputconstants.h"
+	"BatInputLib/inputcontext.h"
+	"BatInputLib/inputsystem.h"
+
+1448703633 c:\protocode\batinputlib\include\batinputlib\rawinputconstants.h
+
+1448703433 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
+
+1449208147 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
+
+1446780936 c:\protocode\protoengine\include\protoengine\proto_core.h
+
+1432804871 c:\protocode\protoengine\include\protoengine\scene\scene.h
+	"ProtoEngine\Scene\scenenode.h"
+
+1432805512 c:\protocode\protoengine\include\protoengine\scene\scenenode.h
+
+1447229572 c:\protocode\protoengine\include\protoengine\application.h
+
+1452387305 c:\protocode\protoengine\include\protoengine\basestate.h
 	"ProtoEngine\gamecontext.h"
 
 1447222594 c:\protocode\protoengine\include\protoengine\gamecontext.h
 
-1450419690 source:c:\protocode\batapplication\src\frontend.cpp
+1452380372 source:c:\protocode\batapplication\src\controllers\objecttracer.cpp
+	"BatApplication/Controllers/objecttracer.h"
+
+1450574201 c:\protocode\batapplication\include\batapplication\controllers\objecttracer.h
+
+1452377830 source:c:\protocode\batapplication\src\entity\renderedentity.cpp
 	"BatApplication/precompiled.h"
-	"BatApplication/frontend.h"
+	"BatApplication/Entity/renderedentity.h"
 
 1448749246 c:\protocode\batapplication\include\batapplication\precompiled.h
 	<iostream>
@@ -554,81 +602,58 @@
 	<SOIL.h>
 	"ProtoEngine\protoengine.h"
 
-1449208282 c:\protocode\batapplication\include\batapplication\frontend.h
+1452377863 c:\protocode\batapplication\include\batapplication\entity\renderedentity.h
+
+1452752301 source:c:\protocode\batapplication\src\frontend.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/frontend.h"
+
+1452748624 c:\protocode\batapplication\include\batapplication\frontend.h
 	"ProtoEngine\protoengine.h"
 
-1447022459 c:\protocode\protographicslib\include\protographicslib\protographicslib.h
-	"ProtoGraphicsLib/graphicssystem.h"
-	"ProtoGraphicsLib/camera.h"
-	"ProtoGraphicsLib/material.h"
-	"ProtoGraphicsLib/renderobject.h"
-	"ProtoGraphicsLib/texture.h"
-
-1447224236 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
-	"renderobject.h"
-	"ProtoGraphicsLib/shader.h"
-	"ProtoGraphicsLib/mesh.h"
-	"BatKernel/batcore.h"
-
-1450761300 c:\protocode\protographicslib\include\protographicslib\renderobject.h
-
-1447048736 c:\protocode\protographicslib\include\protographicslib\shader.h
-
-1449645574 c:\protocode\protographicslib\include\protographicslib\mesh.h
-
-1450419599 c:\protocode\protographicslib\include\protographicslib\camera.h
-
-1446958204 c:\protocode\protographicslib\include\protographicslib\material.h
-
-1447021609 c:\protocode\protographicslib\include\protographicslib\texture.h
-
-1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
-
-1447223309 c:\protocode\batkernel\include\batkernel\ibatsystem.h
-	"BatKernel/ibatcomponent.h"
-
-1447299413 c:\protocode\batkernel\include\batkernel\common.h
-
-1447223494 c:\protocode\batkernel\include\batkernel\ibatcomponent.h
-
-1447299400 c:\protocode\batinputlib\include\batinputlib\input.h
-	"BatKernel/ibatinput.h"
-
-1449208242 c:\protocode\batkernel\include\batkernel\ibatinput.h
-
-1448703433 c:\protocode\batinputlib\include\batinputlib\inputcontext.h
-
-1448685684 c:\protocode\batinputlib\include\batinputlib\batinput.h
-	"BatInputLib/rawinputconstants.h"
-	"BatInputLib/inputcontext.h"
-	"BatInputLib/inputsystem.h"
-
-1448703633 c:\protocode\batinputlib\include\batinputlib\rawinputconstants.h
-
-1449208147 c:\protocode\batinputlib\include\batinputlib\inputsystem.h
-
-1450863564 source:c:\protocode\batapplication\src\gameplay.cpp
+1452757580 source:c:\protocode\batapplication\src\gameplay.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/gameplay.h"
 
-1450862598 c:\protocode\batapplication\include\batapplication\gameplay.h
+1452756447 c:\protocode\batapplication\include\batapplication\gameplay.h
 	"BatApplication/Controllers/objecttracer.h"
 	"BatApplication/Player/character.h"
 	"BatApplication/Map/map.h"
 	"BatApplication/Player/playercontroller.h"
+	"BatApplication/Map/entityfactory.h"
 
-1447221067 c:\protocode\batkernel\include\batkernel\transform.h
+1452378875 c:\protocode\batapplication\include\batapplication\player\character.h
+	"BatKernel/entity.h"
+	"ProtoGraphicsLib/renderobject.h"
+	"BatApplication/Entity/renderedentity.h"
 
-1449440636 c:\protocode\batkernel\include\batkernel\object.h
+1452376926 c:\protocode\batapplication\include\batapplication\map\map.h
 
-1449442091 c:\protocode\batkernel\include\batkernel\entity.h
-	"BatKernel/object.h"
+1450770123 c:\protocode\batapplication\include\batapplication\player\playercontroller.h
 
-1450860690 source:c:\protocode\batapplication\src\map\jsonmaploader.cpp
+1452756310 c:\protocode\batapplication\include\batapplication\map\entityfactory.h
+	"BatApplication/Entity/renderedentity.h"
+
+1452753476 source:c:\protocode\batapplication\src\main.cpp
+	"BatApplication/precompiled.h"
+	"ProtoEngine/ProtoEngine.h"
+	"BatApplication/frontend.h"
+	"BatApplication/gameplay.h"
+	"State/FrontEnd.h"
+	"State/GamePlay.h"
+	"State/GameContext.h"
+	"State/GameStates.h"
+
+1452757490 source:c:\protocode\batapplication\src\map\entityfactory.cpp
+	"BatApplication/precompiled.h"
+	"BatApplication/Map/entityfactory.h"
+	"BatApplication/Player/character.h"
+
+1452041882 source:c:\protocode\batapplication\src\map\jsonmaploader.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/Map/jsonmaploader.h"
 
-1450860698 c:\protocode\batapplication\include\batapplication\map\jsonmaploader.h
+1452038191 c:\protocode\batapplication\include\batapplication\map\jsonmaploader.h
 	"rapidjson/document.h"
 	"rapidjson/writer.h"
 	"rapidjson/stringbuffer.h"
@@ -743,19 +768,16 @@
 	<utility>
 	"internal/stack.h"
 
-1450862730 c:\protocode\batapplication\include\batapplication\map\map.h
-
-1449561480 c:\protocode\batapplication\include\batapplication\\map
-
-1450862910 source:c:\protocode\batapplication\src\map\map.cpp
+1452757502 source:c:\protocode\batapplication\src\map\map.cpp
 	"BatApplication/precompiled.h"
 	"ProtoGraphicsLib/mesh.h"
 	"BatApplication/Map/map.h"
 	"BatApplication/Map/jsonmaploader.h"
 
-1450571166 c:\protocode\batapplication\include\batapplication\player\character.h
-	"BatKernel/entity.h"
-	"ProtoGraphicsLib/renderobject.h"
+1452380390 source:c:\protocode\batapplication\src\map\tileset.cpp
+	"BatApplication/Map/tileset.h"
+
+1450650954 c:\protocode\batapplication\include\batapplication\map\tileset.h
 
 1450571547 source:c:\protocode\batapplication\src\player\character.cpp
 	"BatApplication/precompiled.h"
@@ -764,23 +786,4 @@
 1450772268 source:c:\protocode\batapplication\src\playercontroller.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/Player/playercontroller.h"
-
-1450770123 c:\protocode\batapplication\include\batapplication\player\playercontroller.h
-
-1450574201 c:\protocode\batapplication\include\batapplication\controllers\objecttracer.h
-
-1450576532 source:c:\protocode\batapplication\src\controllers\objecttracer.cpp
-	"objecttracer.h"
-
-1450650088 source:c:\protocode\batapplication\src\map\tileset.cpp
-	"tileset.h"
-
-1450650954 c:\protocode\batapplication\include\batapplication\map\tileset.h
-
-1450772260 source:c:\protocode\batapplication\src\map\entityfactory.cpp
-	"BatApplication/precompiled.h"
-	"BatApplication/Map/entityfactory.h"
-
-1450769705 c:\protocode\batapplication\include\batapplication\map\entityfactory.h
-	"BatKernel/entity.h"
 

@@ -1,4 +1,4 @@
-#include "ibatinput.h"
+#include "BatKernel/ibatinput.h"
 
 IBatInput::IBatInput()
 {

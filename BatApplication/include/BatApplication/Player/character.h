@@ -3,12 +3,12 @@
 
 #include "BatKernel/entity.h"
 #include "ProtoGraphicsLib/renderobject.h"
-class Character : public Entity
+#include "BatApplication/Entity/renderedentity.h"
+class Character : public RenderedEntity
 {
     public:
         Character();
         virtual ~Character();
-        RenderObject m_RenderObject;
     protected:
     private:
 };

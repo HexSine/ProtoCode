@@ -10,7 +10,7 @@
 class BaseState
 {
 public:
-	BaseState(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,GameContext& gc);
+	BaseState(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,ResourceManager& resSystem,GameContext& gc);
 	virtual ~BaseState();
 
 	virtual void Load() = 0;
@@ -18,10 +18,13 @@ public:
 	virtual int Update(float deltaTime) = 0;
 	virtual void Render() = 0;
 
+	std::vector<Entity> mEntities;
+
 protected:
-	GameContext& mGameContext;
     IBatGraphicsSystem& m_GraphicsSystem;
     IBatInput& m_InputSystem;
+    ResourceManager& m_ResourceData;
+	GameContext& mGameContext;
 };
 
 #endif

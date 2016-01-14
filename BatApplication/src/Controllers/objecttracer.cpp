@@ -1,4 +1,4 @@
-#include "objecttracer.h"
+#include "BatApplication/Controllers/objecttracer.h"
 
 ObjectTracer::ObjectTracer(Transform& target, Transform& tracer, glm::vec3 offset) : m_Target(target), m_Tracer(tracer), m_Offset(offset)
 {

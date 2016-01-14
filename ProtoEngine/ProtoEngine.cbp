@@ -59,14 +59,11 @@
 		</Unit>
 		<Unit filename="include/ProtoEngine/proto_common.h" />
 		<Unit filename="include/ProtoEngine/proto_core.h" />
-		<Unit filename="include/ProtoEngine/transform.h" />
 		<Unit filename="src/Scene/scene.cpp" />
 		<Unit filename="src/Scene/scenenode.cpp" />
 		<Unit filename="src/application.cpp" />
 		<Unit filename="src/basestate.cpp" />
-		<Unit filename="src/entity.cpp" />
 		<Unit filename="src/gamecontext.cpp" />
-		<Unit filename="src/transform.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

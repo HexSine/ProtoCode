@@ -1,6 +1,9 @@
 #include "BatApplication/precompiled.h"
 #include "BatApplication/gameplay.h"
-Gameplay::Gameplay(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,GameContext& gc) : BaseState(graphicsSystem,inputSystem,gc), m_Controller(m_Bat,m_InputSystem), m_CameraController(m_Bat.m_Transform,m_cam.m_Transform,glm::vec3(0,0,10))
+
+
+Gameplay::Gameplay(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,ResourceManager& resSystem,GameContext& gc)
+    : BaseState(graphicsSystem,inputSystem,resSystem,gc), m_Controller(m_Bat,m_InputSystem), m_CameraController(m_Bat.m_Transform,m_cam.m_Transform,glm::vec3(0,0,10)),mEntFactory(resSystem)
 {
     //ctor
 }
@@ -13,58 +16,39 @@ Gameplay::~Gameplay()
 void Gameplay::Load()
 {
     m_InputSystem.SetInputState(&m_InputState);
-    std::string URImesh = meshManager.Load("Data/Models/quad.obj");
-    std::string URIshader = shaderManager.Load("Data/Shaders/TexturedProgram.glsl");
-    std::string URItextureBg = textureManager.Load("Data/Textures/Map/BackGround.png");
-    std::string URItextureMap = textureManager.Load("Data/Textures/Map/tileset_brick.png");
-    std::string URItextureBat = textureManager.Load("Data/Textures/Characters/Batte.png");
-    std::string URImap = m_MapManager.Load("Data/Maps/TestMap.json");
+    std::string URImesh = m_ResourceData.Load<Mesh>("Data/Models/quad.obj");
+    std::string URIshader = m_ResourceData.Load<Shader>("Data/Shaders/TexturedProgram.glsl");
+    std::string URItextureBg = m_ResourceData.Load<Texture>("Data/Textures/Map/BackGround.png");
+    std::string URItextureMap = m_ResourceData.Load<Texture>("Data/Textures/Map/tileset_brick.png");
+    std::string URItextureBat = m_ResourceData.Load<Texture>("Data/Textures/Characters/Batte.png");
+    std::string URImap = m_ResourceData.Load<Map>("Data/Maps/TestMap.json");
 
-    m_BGMaterial.m_ProgramID = shaderManager.Get(URIshader).m_ProgramID;
-    m_BGMaterial.m_TextureID = textureManager.Get(URItextureBg).m_TextureID;
+    std::string URIBackgroundMat = m_ResourceData.Load<Material>("Data/Materials/Gameplay/BackgroundMat.mat");
+    std::string URIMapMat = m_ResourceData.Load<Material>("Data/Materials/Gameplay/MapMat.mat");
+    std::string URIBatMat = m_ResourceData.Load<Material>("Data/Materials/Gameplay/BatMat.mat");
 
-    m_MapMaterial.m_ProgramID = shaderManager.Get(URIshader).m_ProgramID;
-    m_MapMaterial.m_TextureID = textureManager.Get(URItextureMap).m_TextureID;
+    m_Bat.m_RenderObject.p_Material = m_ResourceData.GetPtr<Material>(URIBatMat);
+    m_Bat.m_RenderObject.p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
 
-    m_Bat.m_RenderObject.p_Material = &m_BatMaterial;
-    m_Bat.m_RenderObject.p_Mesh = meshManager.GetPtr(URImesh);
-
-    m_BatMaterial.m_ProgramID = shaderManager.Get(URIshader).m_ProgramID;
-    m_BatMaterial.m_TextureID = textureManager.Get(URItextureBat).m_TextureID;
-
-    m_background.p_Mesh = meshManager.GetPtr(URImesh);
-    m_background.p_Material = &m_BGMaterial;
+    m_background.p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
+    m_background.p_Material = m_ResourceData.GetPtr<Material>(URIBackgroundMat);
 
 
 
     m_cam.SetView(glm::vec3(256,-128,10),glm::vec3(256,-128,0),glm::vec3(0,1,0));
     m_cam.SetOrtho(glm::vec3(0,0,0),640,480,0.1f,100.0f);
 
-    p_Map = m_MapManager.GetPtr(URImap);
+    p_Map = m_ResourceData.GetPtr<Map>(URImap);
     u32 c = p_Map->m_Layers.size();
 
-    float t = 32.0f/256.0f;
     for(u32 i = 0; i < c; ++i)
     {
-        Layer& layer = p_Map->m_Layers[i];
-        u32& lType = layer.m_Type;
-
-        if(lType < 2)
-        {
-            RenderObject* renObj = new RenderObject;
-
-            renObj->Init();
-            //renObj->m_Tile = glm::vec2(t,t);
-            //renObj->m_Offset = glm::vec2(0.0f,224.0f/256.0f);
-            renObj->p_Material = &m_MapMaterial;
-            p_Map->GenerateLayerMesh(layer,*renObj);
-            m_Renderables.push_back(renObj);
-        }
+        SpawnLayer(p_Map->m_Layers[i]);
     }
 
     m_Bat.m_Transform.Translate(0,-128,1);
 
-    glUseProgram( m_BGMaterial.m_ProgramID);
+    glUseProgram(m_ResourceData.Get<Shader>(URIshader).m_ProgramID);
 
     m_InputState.AddKey(GLFW_KEY_W);
     m_InputState.AddKey(GLFW_KEY_S);
@@ -76,12 +60,38 @@ void Gameplay::Load()
     m_InputState.AddKey(GLFW_KEY_LEFT);
     m_InputState.AddKey(GLFW_KEY_RIGHT);
 }
+void Gameplay::SpawnLayer(Layer& layer)
+{
+    u32& lType = layer.m_Type;
+    if(lType < 2)
+    {
+        RenderObject* renObj = new RenderObject;
 
+        renObj->Init();
+        //renObj->m_Tile = glm::vec2(t,t);
+        //renObj->m_Offset = glm::vec2(0.0f,224.0f/256.0f);
+        renObj->p_Material = m_ResourceData.GetPtr<Material>("Data/Materials/Gameplay/MapMat.mat");
+        p_Map->GenerateLayerMesh(layer,*renObj);
+        m_Renderables.push_back(renObj);
+    }
+    else
+    {
+        std::vector<u32> ids;
+        p_Map->GetObjectIDs(layer,ids);
+        u32 index = 0;
+        for(s32 y = 0; y < p_Map->m_Height; ++y)
+        {
+            for(s32 x = 0; x < p_Map->m_Width; ++x)
+            {
+                mEntFactory.CreateEntity(ids[index],glm::vec3(x * (s32)p_Map->m_tWidth+16,-y * (s32)p_Map->m_tHeight-16,1));
+                ++index;
+            }
+        }
+    }
+}
 void Gameplay::Unload()
 {
-    meshManager.UnloadAll();
-    shaderManager.UnloadAll();
-    textureManager.UnloadAll();
+    m_ResourceData.UnloadAll();
 }
 int Gameplay::Update(float deltaTime)
 {
@@ -106,11 +116,31 @@ void Gameplay::Render()
          m_GraphicsSystem.DrawRenderObject(*m_Renderables[i],m_mStack.GetMatrix());
     }
 
+    std::vector<RenderedEntity*>& entities = mEntFactory.m_Entities;
+    c = entities.size();
+    for(u32 i = 0; i < c; ++i)
+    {
+        RenderedEntity*& ent = entities[i];
 
-    m_mStack.PushMatrix(m_Bat.m_Transform.m_transform);
-    m_mStack.PushMatrix(glm::scale(glm::mat4(1),glm::vec3(16,16,1)));
+        m_mStack.PushMatrix(ent->m_Transform.m_transform);
+        m_mStack.PushMatrix(glm::scale(glm::mat4(1),glm::vec3(16,16,1)));
+        m_GraphicsSystem.DrawRenderObject(ent->m_RenderObject,m_mStack.GetMatrix());
+        m_mStack.PopMatrix();
+        m_mStack.PopMatrix();
+    }
 
-    m_GraphicsSystem.DrawRenderObject(m_Bat.m_RenderObject,m_mStack.GetMatrix());
+    //m_mStack.PushMatrix(m_Bat.m_Transform.m_transform);
+    //m_mStack.PushMatrix(glm::scale(glm::mat4(1),glm::vec3(16,16,1)));
+
+    //m_GraphicsSystem.DrawRenderObject(m_Bat.m_RenderObject,m_mStack.GetMatrix());
 
     m_mStack.Clear();
+}
+
+void Gameplay::CreateMapObjects(std::vector<u32>& ids)
+{
+    for(u32 i = 0, c = ids.size(); i < c; ++i)
+    {
+        mEntFactory.CreateEntity(ids[i]);
+    }
 }

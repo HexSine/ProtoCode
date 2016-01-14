@@ -2,7 +2,8 @@
 #define TEXTURE_H
 
 
-class Texture
+#include "BatKernel/Resource/resource.h"
+class Texture : public Resource
 {
     public:
         Texture(std::string path);

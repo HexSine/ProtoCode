@@ -17,7 +17,6 @@ void EnableOpenGL(HWND hwnd, HDC*, HGLRC*);
 void DisableOpenGL(HWND, HDC, HGLRC);
 
 Application app;
-
 int WINAPI WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
                    LPSTR lpCmdLine,
@@ -34,13 +33,15 @@ namespace Proto
 {
     BaseState* currentState;
     GameContext gameContext;
+    ResourceManager resSystem;
     GraphicsSystem gSys;
     InputSystem input;
     int nextState = 0;
     bool ProtoInitialize()
     {
         input.Initialize(app.GetWin());
-        currentState = new FrontEnd(gSys,input,gameContext);
+        gSys.Initialize(&resSystem);
+        currentState = new FrontEnd(gSys,input,resSystem,gameContext);
         currentState->Load();
 
         glEnable (GL_BLEND);
@@ -62,10 +63,10 @@ namespace Proto
             switch(nextState)
             {
             case 1:
-                currentState = new FrontEnd(gSys,input,gameContext);
+                currentState = new FrontEnd(gSys,input,resSystem,gameContext);
                 break;
             case 2:
-                currentState = new Gameplay(gSys,input,gameContext);
+                currentState = new Gameplay(gSys,input,resSystem,gameContext);
                 break;
             }
             if(currentState != NULL)

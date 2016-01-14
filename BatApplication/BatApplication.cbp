@@ -19,8 +19,6 @@
 					<Add directory="../ProtoGraphicsLib/include" />
 					<Add directory="../BatPhysics/include" />
 					<Add directory="../BatInputLib/include" />
-					<Add directory="include/BatApplication/Controllers" />
-					<Add directory="include/BatApplication/Map" />
 				</Compiler>
 				<Linker>
 					<Add directory="../BatKernel/bin/Debug" />
@@ -37,8 +35,6 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
-					<Add directory="include/BatApplication/Controllers" />
-					<Add directory="include/BatApplication/Map" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -71,6 +67,7 @@
 		<Unit filename="Data/Maps/TestMap4.json" />
 		<Unit filename="Data/Maps/TestMapNew.json" />
 		<Unit filename="include/BatApplication/Controllers/objecttracer.h" />
+		<Unit filename="include/BatApplication/Entity/renderedentity.h" />
 		<Unit filename="include/BatApplication/Map/entityfactory.h" />
 		<Unit filename="include/BatApplication/Map/jsonmaploader.h" />
 		<Unit filename="include/BatApplication/Map/map.h" />
@@ -84,6 +81,7 @@
 			<Option weight="0" />
 		</Unit>
 		<Unit filename="src/Controllers/objecttracer.cpp" />
+		<Unit filename="src/Entity/renderedentity.cpp" />
 		<Unit filename="src/Map/entityfactory.cpp" />
 		<Unit filename="src/Map/jsonmaploader.cpp" />
 		<Unit filename="src/Map/map.cpp" />

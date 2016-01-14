@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="34" height="9" tilewidth="32" tileheight="32" nextobjectid="23">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="34" height="9" tilewidth="32" tileheight="32" nextobjectid="41">
  <tileset firstgid="1" name="tileset_brick" tilewidth="32" tileheight="32">
   <image source="../Textures/Map/tileset_brick.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="65" name="Entity" tilewidth="32" tileheight="32">
+ <tileset firstgid="65" name="tileset_cave" tilewidth="32" tileheight="32">
+  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="129" name="Entity" tilewidth="32" tileheight="32">
   <tile id="0">
-   <properties>
-    <property name="id" value="1"/>
-   </properties>
    <image width="32" height="32" source="../Textures/Characters/Batte.png"/>
   </tile>
   <tile id="1">
-   <properties>
-    <property name="id" value="2"/>
-   </properties>
    <image width="32" height="32" source="../Textures/Characters/knight.png"/>
   </tile>
- </tileset>
- <tileset firstgid="67" name="tileset_cave" tilewidth="32" tileheight="32">
-  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
  </tileset>
  <layer name="BackGround" width="34" height="9">
   <properties>
    <property name="layerType" value="0"/>
+   <property name="tileSet" value="0"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -336,6 +331,7 @@
  <layer name="PlayerGround" width="34" height="9">
   <properties>
    <property name="layerType" value="1"/>
+   <property name="tileSet" value="0"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -649,6 +645,7 @@
  <layer name="Entities" width="34" height="9">
   <properties>
    <property name="layerType" value="2"/>
+   <property name="tileSet" value="2"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -823,7 +820,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="65"/>
+   <tile gid="129"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -962,6 +959,7 @@
  <layer name="Forground" width="34" height="9">
   <properties>
    <property name="layerType" value="0"/>
+   <property name="tileSet" value="0"/>
   </properties>
   <data>
    <tile gid="0"/>

@@ -8,6 +8,8 @@ class Object
         Object();
         virtual ~Object();
 
+
+
         virtual void Init() = 0;
         virtual void Terminate() = 0;
         virtual void Update() = 0;

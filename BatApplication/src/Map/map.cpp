@@ -13,6 +13,7 @@ Map::Map(std::string path) : m_Width(0), m_Height(0),m_tWidth(0),m_tHeight(0)
     m_tHeight = maploader.m_th;
     m_tWidth = maploader.m_tw;
     m_Layers = maploader.m_Layers;
+    m_TileSets = maploader.m_TileSets;
 }
 
 Map::~Map()
@@ -68,4 +69,26 @@ void Map::GenerateLayerMesh(Layer& layer, RenderObject& entity)
     }
 
     entity.p_Mesh = new Mesh(vertices);
+}
+void Map::GetObjectIDs(Layer& layer, std::vector<u32>& ids)
+{
+    u32 index = 0;
+    u32 firstID = m_TileSets[layer.m_TileSetID].m_firstgid-1;
+    ids.reserve(m_Width * m_Height);
+    for(u32 y = 0; y < m_Height; ++y)
+    {
+        for(u32 x = 0; x < m_Width; ++x)
+        {
+            u32 id = layer.m_Tiles[x + y * m_Width];
+            if(id != 0)
+            {
+                ids.push_back(id - firstID);
+            }
+            else
+            {
+                ids.push_back(id);
+            }
+            ++index;
+        }
+    }
 }

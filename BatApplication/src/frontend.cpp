@@ -1,6 +1,6 @@
 #include "BatApplication/precompiled.h"
 #include "BatApplication/frontend.h"
-FrontEnd::FrontEnd(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,GameContext& gc) : BaseState(graphicsSystem,inputSystem,gc), m_CursorIndex(0)
+FrontEnd::FrontEnd(IBatGraphicsSystem& graphicsSystem,IBatInput& inputSystem,ResourceManager& resSystem,GameContext& gc) : BaseState(graphicsSystem,inputSystem,resSystem,gc), m_CursorIndex(0)
 {
     //ctor
 }
@@ -13,23 +13,19 @@ FrontEnd::~FrontEnd()
 void FrontEnd::Load()
 {
     m_InputSystem.SetInputState(&m_InputState);
-    std::string URImesh = meshManager.Load("Data/Models/quad.obj");
-    std::string URIshader = shaderManager.Load("Data/Shaders/TexturedProgram.glsl");
-    std::string URItexture = textureManager.Load("Data/Textures/FrontEnd/BackGround.png");
+    std::string URImesh = m_ResourceData.Load<Mesh>("Data/Models/quad.obj");
+    std::string URIshader = m_ResourceData.Load<Shader>("Data/Shaders/TexturedProgram.glsl");
+    std::string URItexture = m_ResourceData.Load<Texture>("Data/Textures/FrontEnd/BackGround.png");
 
-    std::string URICursorTex = textureManager.Load("Data/Textures/FrontEnd/Batui.png");
+    std::string URICursorTex = m_ResourceData.Load<Texture>("Data/Textures/FrontEnd/Batui.png");
+    std::string URICursorMaterial = m_ResourceData.Load<Material>("Data/Materials/FrontEnd/CursorMat.mat");
+    std::string URIBackgroundMaterial = m_ResourceData.Load<Material>("Data/Materials/FrontEnd/BackgroundMat.mat");
 
-    m_CursorMaterial.m_ProgramID = shaderManager.Get(URIshader).m_ProgramID;
-    m_CursorMaterial.m_TextureID = textureManager.Get(URICursorTex).m_TextureID;
+    m_background.p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
+    m_background.p_Material = m_ResourceData.GetPtr<Material>(URIBackgroundMaterial);
 
-    m_BGMaterial.m_ProgramID = shaderManager.Get(URIshader).m_ProgramID;
-    m_BGMaterial.m_TextureID = textureManager.Get(URItexture).m_TextureID;
-
-    m_background.p_Mesh = meshManager.GetPtr(URImesh);
-    m_background.p_Material = &m_BGMaterial;
-
-    m_cursor.p_Mesh = meshManager.GetPtr(URImesh);
-    m_cursor.p_Material = &m_CursorMaterial;
+    m_cursor.p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
+    m_cursor.p_Material = m_ResourceData.GetPtr<Material>(URICursorMaterial);
 
     m_CursorPositions[0] = glm::vec3(-64,64,0);
     m_CursorPositions[1] = glm::vec3(-64,-64,0);
@@ -40,7 +36,7 @@ void FrontEnd::Load()
     m_cam.SetView(glm::vec3(0,0,10),glm::vec3(0,0,0),glm::vec3(0,1,0));
     m_cam.SetOrtho(glm::vec3(0,0,0),640,480,0.1f,100.0f);
 
-    glUseProgram( m_BGMaterial.m_ProgramID);
+    glUseProgram(m_ResourceData.Get<Shader>(URIshader).m_ProgramID);
 
     m_InputState.AddKey(GLFW_KEY_UP);
     m_InputState.AddKey(GLFW_KEY_DOWN);
@@ -59,9 +55,7 @@ void FrontEnd::MoveDown()
 }
 void FrontEnd::Unload()
 {
-    meshManager.UnloadAll();
-    shaderManager.UnloadAll();
-    textureManager.UnloadAll();
+    m_ResourceData.UnloadAll();
 }
 int FrontEnd::Update(float deltaTime)
 {

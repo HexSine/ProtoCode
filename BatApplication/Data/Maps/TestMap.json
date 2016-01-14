@@ -7,7 +7,8 @@
          "opacity":1,
          "properties":
             {
-             "layerType":"0"
+             "layerType":"0",
+             "tileSet":"0"
             },
          "type":"tilelayer",
          "visible":true,
@@ -22,7 +23,8 @@
          "opacity":1,
          "properties":
             {
-             "layerType":"1"
+             "layerType":"1",
+             "tileSet":"0"
             },
          "type":"tilelayer",
          "visible":true,
@@ -37,7 +39,8 @@
          "opacity":1,
          "properties":
             {
-             "layerType":"2"
+             "layerType":"2",
+             "tileSet":"2"
             },
          "type":"tilelayer",
          "visible":true,
@@ -52,7 +55,8 @@
          "opacity":1,
          "properties":
             {
-             "layerType":"0"
+             "layerType":"0",
+             "tileSet":"0"
             },
          "type":"tilelayer",
          "visible":true,
@@ -60,7 +64,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":23,
+ "nextobjectid":41,
  "orientation":"orthogonal",
  "properties":
     {
@@ -109,17 +113,6 @@
             },
          "spacing":0,
          "tileheight":32,
-         "tileproperties":
-            {
-             "0":
-                {
-                 "id":"1"
-                },
-             "1":
-                {
-                 "id":"2"
-                }
-            },
          "tiles":
             {
              "0":

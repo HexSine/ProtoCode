@@ -2,13 +2,14 @@
 #define MESH_H
 
 
+#include "BatKernel/Resource/resource.h"
 struct Vertex
 {
     glm::vec3 Position;
     glm::vec3 Normal;
     glm::vec2 UV;
 };
-class Mesh
+class Mesh : public Resource
 {
     public:
         Mesh(std::string path);

@@ -31,6 +31,8 @@ bool JSONMapLoader::Parse(const char* path)
 
     //Set all the id's
     //p_id = new u32[m_w * m_h];
+    Value& tileSets = m_Doc["tilesets"];
+    ReadTileSets(tileSets);
     Value& layers = m_Doc["layers"];
     ReadLayers(layers);
 
@@ -42,6 +44,29 @@ bool JSONMapLoader::Parse(const char* path)
     return true;
 
 }
+void JSONMapLoader::ReadTileSets(Value& inValue)
+{
+    u32 c = inValue.Size();
+    for(u32 i = 0; i < c; ++i)
+    {
+        Value& vTileSet = inValue[i];
+
+        TileSet tileSet;
+        tileSet.m_firstgid = vTileSet["firstgid"].GetUint();
+        if(vTileSet.HasMember("image"))
+        {
+            tileSet.m_image = vTileSet["image"].GetString();
+            tileSet.m_imageheight = vTileSet["imageheight"].GetUint();
+            tileSet.m_imagewidth = vTileSet["imagewidth"].GetUint();
+        }
+        tileSet.m_margin = vTileSet["margin"].GetUint();
+        tileSet.m_name = vTileSet["name"].GetString();
+        tileSet.m_spacing = vTileSet["spacing"].GetUint();
+        tileSet.m_tileheight = vTileSet["tileheight"].GetUint();
+        tileSet.m_tilewidth = vTileSet["tilewidth"].GetUint();
+        m_TileSets.push_back(tileSet);
+    }
+}
 void JSONMapLoader::ReadLayers(Value& inValue)
 {
     u32 c = inValue.Size();
@@ -52,6 +77,7 @@ void JSONMapLoader::ReadLayers(Value& inValue)
 
         Layer layer;
         layer.m_Type = atoi(vLayer["properties"]["layerType"].GetString());
+        layer.m_TileSetID = atoi(vLayer["properties"]["tileSet"].GetString());
         u32 dSize = vData.Size();
         layer.m_Tiles.resize(dSize);
 

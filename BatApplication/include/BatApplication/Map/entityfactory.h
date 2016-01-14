@@ -1,15 +1,18 @@
 #ifndef ENTITYFACTORY_H
 #define ENTITYFACTORY_H
 
-#include "BatKernel/entity.h"
+#include "BatApplication/Entity/renderedentity.h"
 class EntityFactory
 {
     public:
-        EntityFactory();
+        EntityFactory(ResourceManager& resSystem);
         virtual ~EntityFactory();
-        Entity* CreateEntity(u32 id);
-    protected:
-        std::vector<Entity> m_Entities;
+
+        RenderedEntity* CreateEntity(u32 id, glm::vec3 position);
+        RenderedEntity* CreateEntity(u32 id);
+
+        std::vector<RenderedEntity*> m_Entities;
+        ResourceManager& m_ResourceData;
     private:
 };
 

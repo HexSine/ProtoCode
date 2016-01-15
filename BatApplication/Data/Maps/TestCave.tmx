@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="CaveTile" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="cave_decor" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../Textures/Map/tileset_cave_decor.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7Dd+BeMjAXSKmgCAAAAAABcNO0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8tcgjAAs=
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2N1KhEAYBuBpq4O2O4g6iTrpl7a/+7+zRlxZMR0tJ3dinwdeWF0RmZdvQEPgv1sn8hTzHPMQ89hzvG6dT11/t/2fcakePmI+Y95i3nuOu+s+dP0m1J0wrtvFfdit45juuqdsZjzjIel28brfxzl4uiiLLsqSq4ujmFXMcYZ7HbJcc3EW6lk7z3Q/5tFHGS5jrmJOQt3HabBv7UPTw03Mbfj+HmNOlnMRdj2selLNij6WUXVxHdLfvdr7VhP7V35Tu+iLeclrqIvqfHuf0sffaq93X6bOiz5+56X1e87+pI+fa75xzE1qn9LHdM079RLRxzh9lEUfZdFHWfRRFn2URR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwJAvjssZlw==
+  </data>
+ </layer>
+ <layer name="decor" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt10EKgCAQAEC/ptn/v1TCClJBh6BIZkBccA8e1lVTAgBgFnkfNWbgbP16A1zKSd+CpsbsTPxDvU+B6elV7+r3w/jn875ldq3Wl4hrxL3+S8TlkJuHNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAJzbvYgd+
+  </data>
+ </layer>
+</map>

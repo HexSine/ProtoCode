@@ -11,6 +11,9 @@ class EntityFactory
         RenderedEntity* CreateEntity(u32 id, glm::vec3 position);
         RenderedEntity* CreateEntity(u32 id);
 
+        Camera m_cam;
+        std::vector<RenderObject*> m_RenderObjects;
+        std::vector<System*> m_Systems;
         std::vector<RenderedEntity*> m_Entities;
         ResourceManager& m_ResourceData;
     private:

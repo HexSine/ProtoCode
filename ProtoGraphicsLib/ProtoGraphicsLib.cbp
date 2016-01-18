@@ -48,6 +48,7 @@
 		<Unit filename="include/ProtoGraphicsLib/ProtoGraphicsLib.h">
 			<Option compile="1" />
 		</Unit>
+		<Unit filename="include/ProtoGraphicsLib/Systems/rendersystem.h" />
 		<Unit filename="include/ProtoGraphicsLib/camera.h" />
 		<Unit filename="include/ProtoGraphicsLib/graphicssystem.h" />
 		<Unit filename="include/ProtoGraphicsLib/material.h" />
@@ -61,6 +62,7 @@
 		<Unit filename="include/ProtoGraphicsLib/texture.h" />
 		<Unit filename="src/ProtoGraphics.cpp" />
 		<Unit filename="src/ProtoGraphicsLib.cpp" />
+		<Unit filename="src/Systems/rendersystem.cpp" />
 		<Unit filename="src/camera.cpp" />
 		<Unit filename="src/graphicssystem.cpp" />
 		<Unit filename="src/material.cpp" />

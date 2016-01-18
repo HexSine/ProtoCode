@@ -2,17 +2,17 @@
 #define OBJECTTRACER_H
 
 
-class ObjectTracer
+class ObjectTracer : public System
 {
     public:
-        ObjectTracer(Transform& target, Transform& tracer, glm::vec3 offset);
-        ObjectTracer(Transform& target, Transform& tracer);
+        ObjectTracer(Entity& entity);
         virtual ~ObjectTracer();
-        void Update();
-    protected:
-        Transform& m_Target;
-        Transform& m_Tracer;
+        virtual void Update();
+
+        Transform* m_Target;
         glm::vec3 m_Offset;
+    protected:
+        Transform& m_Tracer;
     private:
 };
 

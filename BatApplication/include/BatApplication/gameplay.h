@@ -23,21 +23,15 @@ class Gameplay : public BaseState
 
         void CreateMapObjects(std::vector<u32>& ids);
 
-        RenderObject m_background;
-        Camera m_cam;
+        Entity m_background;
 
         MatrixStack m_mStack;
         InputState m_InputState;
 
-        //Controllers
-        PlayerController m_Controller;
-        ObjectTracer m_CameraController;
-
         //Entitys
         EntityFactory mEntFactory;
-        std::vector<RenderObject*> m_Renderables;
+        std::vector<Entity*> m_Renderables;
         Map* p_Map;
-        Character m_Bat;
 
     protected:
     private:

@@ -2,6 +2,7 @@
 #define IBATSYSTEM_H
 
 #include "BatKernel/ibatcomponent.h"
+class System;
 class IBatGraphicsSystem
 {
     public:
@@ -9,7 +10,7 @@ class IBatGraphicsSystem
         virtual ~IBatGraphicsSystem();
 
         virtual bool Initialize(ResourceManager* resSystem) = 0;
-        virtual void DrawRenderObject(const IBatComponent& target,glm::mat4 matrix) = 0;
+        virtual void DrawRenderObject(const System& target,glm::mat4 matrix) = 0;
     protected:
     private:
 };

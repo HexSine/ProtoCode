@@ -2,15 +2,14 @@
 #define PLAYERCONTROLLER_H
 
 
-class PlayerController : public Entity
+class PlayerController : public System
 {
     public:
-        PlayerController(Entity& child, IBatInput& inputSystem);
+        PlayerController(Entity& entity);
         virtual ~PlayerController();
         virtual void Update(f32 deltaTime);
     protected:
-        Entity& m_Child;
-        IBatInput& m_InputSystem;
+        //IBatInput& m_InputSystem;
     private:
 };
 

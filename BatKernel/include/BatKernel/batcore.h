@@ -14,5 +14,6 @@
 
 #include "BatKernel/object.h"
 #include "BatKernel/entity.h"
+#include "BatKernel/system.h"
 
 #endif

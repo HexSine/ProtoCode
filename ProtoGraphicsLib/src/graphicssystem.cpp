@@ -8,6 +8,7 @@
 #include "ProtoGraphicsLib/material.h"
 #include "ProtoGraphicsLib/texture.h"
 #include "ProtoGraphicsLib/shader.h"
+#include "ProtoGraphicsLib/Systems/rendersystem.h"
 GraphicsSystem::GraphicsSystem()
 {
     //ctor
@@ -22,9 +23,9 @@ bool GraphicsSystem::Initialize(ResourceManager* resSystem)
     m_ResourceData = resSystem;
     return true;
 }
-void GraphicsSystem::DrawRenderObject(const IBatComponent& target, glm::mat4 MVP)
+void GraphicsSystem::DrawRenderObject(const System& target, glm::mat4 MVP)
 {
-    RenderObject& renObj = (RenderObject&)target;
+    RenderSystem& renObj = (RenderSystem&)target;
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
     glEnableVertexAttribArray(2);

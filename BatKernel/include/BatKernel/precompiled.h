@@ -15,9 +15,11 @@
 #include <list>
 #include <unordered_map>
 #include <map>
+#include <array>
 #include <stack>
 #include <set>
 #include <unordered_set>
+#include <algorithm>
 
 #include <math.h>
 #include <assert.h>

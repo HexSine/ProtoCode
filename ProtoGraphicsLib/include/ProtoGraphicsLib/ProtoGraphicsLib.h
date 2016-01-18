@@ -7,4 +7,5 @@
 #include "ProtoGraphicsLib/material.h"
 #include "ProtoGraphicsLib/renderobject.h"
 #include "ProtoGraphicsLib/texture.h"
+#include "ProtoGraphicsLib/Systems/rendersystem.h"
 #endif

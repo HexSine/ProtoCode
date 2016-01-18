@@ -22,7 +22,7 @@ Map::~Map()
 void Map::Init()
 {
 }
-void Map::GenerateLayerMesh(Layer& layer, RenderObject& entity)
+void Map::GenerateLayerMesh(Layer& layer, RenderSystem& entity)
 {
     u32 vertIndex = 0;
     std::vector<Vertex> vertices(m_Width * m_Height * 6);

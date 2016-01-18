@@ -59,6 +59,7 @@
 			<Option compile="1" />
 			<Option weight="0" />
 		</Unit>
+		<Unit filename="include/BatKernel/system.h" />
 		<Unit filename="include/BatKernel/transform.h" />
 		<Unit filename="src/Resource/resource.cpp" />
 		<Unit filename="src/entity.cpp" />
@@ -68,6 +69,7 @@
 		<Unit filename="src/iupdateable.cpp" />
 		<Unit filename="src/matrixstack.cpp" />
 		<Unit filename="src/object.cpp" />
+		<Unit filename="src/system.cpp" />
 		<Unit filename="src/transform.cpp" />
 		<Extensions>
 			<code_completion />

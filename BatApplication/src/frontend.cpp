@@ -21,11 +21,13 @@ void FrontEnd::Load()
     std::string URICursorMaterial = m_ResourceData.Load<Material>("Data/Materials/FrontEnd/CursorMat.mat");
     std::string URIBackgroundMaterial = m_ResourceData.Load<Material>("Data/Materials/FrontEnd/BackgroundMat.mat");
 
-    m_background.p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
-    m_background.p_Material = m_ResourceData.GetPtr<Material>(URIBackgroundMaterial);
+    RenderSystem* bgRenSys = m_background.AddSystem<RenderSystem>();
+    bgRenSys->p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
+    bgRenSys->p_Material = m_ResourceData.GetPtr<Material>(URIBackgroundMaterial);
 
-    m_cursor.p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
-    m_cursor.p_Material = m_ResourceData.GetPtr<Material>(URICursorMaterial);
+    RenderSystem* cursorRenSys = m_Cursor.AddSystem<RenderSystem>();
+    cursorRenSys->p_Mesh = m_ResourceData.GetPtr<Mesh>(URImesh);
+    cursorRenSys->p_Material = m_ResourceData.GetPtr<Material>(URICursorMaterial);
 
     m_CursorPositions[0] = glm::vec3(-64,64,0);
     m_CursorPositions[1] = glm::vec3(-64,-64,0);
@@ -76,8 +78,8 @@ int FrontEnd::Update(float deltaTime)
 }
 void FrontEnd::Render()
 {
-    //Draw The Backgroundb
-    m_GraphicsSystem.DrawRenderObject(m_background,m_mStack.GetMatrix());
+    //Draw The Background
+    m_GraphicsSystem.DrawRenderObject(*m_background.GetSystem<RenderSystem>(),m_mStack.GetMatrix());
 
     m_mStack.PushMatrix(m_cam.m_Projection);
     m_mStack.PushMatrix(m_cam.m_Transform.m_transform);
@@ -86,7 +88,7 @@ void FrontEnd::Render()
     scaleMat[3][3] = 1;
     m_mStack.PushMatrix(m_Cursor.m_Transform.m_transform * scaleMat);
 
-    m_GraphicsSystem.DrawRenderObject(m_cursor,m_mStack.GetMatrix());
+    m_GraphicsSystem.DrawRenderObject(*m_Cursor.GetSystem<RenderSystem>(),m_mStack.GetMatrix());
 
     m_mStack.Clear();
 }

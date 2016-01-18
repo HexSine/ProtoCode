@@ -34,7 +34,7 @@ class Map : public Resource
         Map(std::string path);
         virtual ~Map();
         void Init();
-        void GenerateLayerMesh(Layer& layer, RenderObject& entity);
+        void GenerateLayerMesh(Layer& layer, RenderSystem& entity);
         void GetObjectIDs(Layer& layer, std::vector<u32>& ids);
 
         u32 m_Width;

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1448749246 source:c:\protocode\batapplication\include\batapplication\precompiled.h
+1453106036 source:c:\protocode\batapplication\include\batapplication\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -10,6 +10,7 @@
 	<map>
 	<stack>
 	<set>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -477,7 +478,7 @@
 	"ProtoEngine/application.h"
 	"ProtoEngine/baseState.h"
 
-1452387070 c:\protocode\batkernel\include\batkernel\batcore.h
+1452988877 c:\protocode\batkernel\include\batkernel\batcore.h
 	<glm/glm.hpp>
 	<stack>
 	"BatKernel/common.h"
@@ -489,8 +490,9 @@
 	"BatKernel/transform.h"
 	"BatKernel/object.h"
 	"BatKernel/entity.h"
+	"BatKernel/system.h"
 
-1447299413 c:\protocode\batkernel\include\batkernel\common.h
+1453103631 c:\protocode\batkernel\include\batkernel\common.h
 
 1452416079 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -502,7 +504,7 @@
 
 1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
 
-1452387182 c:\protocode\batkernel\include\batkernel\ibatsystem.h
+1453083678 c:\protocode\batkernel\include\batkernel\ibatsystem.h
 	"BatKernel/ibatcomponent.h"
 
 1447223494 c:\protocode\batkernel\include\batkernel\ibatcomponent.h
@@ -511,25 +513,27 @@
 
 1447221067 c:\protocode\batkernel\include\batkernel\transform.h
 
-1452321257 c:\protocode\batkernel\include\batkernel\object.h
+1452987816 c:\protocode\batkernel\include\batkernel\object.h
 
-1452377104 c:\protocode\batkernel\include\batkernel\entity.h
+1453106082 c:\protocode\batkernel\include\batkernel\entity.h
 	"BatKernel/object.h"
+	"BatKernel/system.h"
 
-1447022459 c:\protocode\protographicslib\include\protographicslib\protographicslib.h
+1453079388 c:\protocode\protographicslib\include\protographicslib\protographicslib.h
 	"ProtoGraphicsLib/graphicssystem.h"
 	"ProtoGraphicsLib/camera.h"
 	"ProtoGraphicsLib/material.h"
 	"ProtoGraphicsLib/renderobject.h"
 	"ProtoGraphicsLib/texture.h"
+	"ProtoGraphicsLib/Systems/rendersystem.h"
 
-1452387284 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
+1453079892 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
 	"renderobject.h"
 	"ProtoGraphicsLib/shader.h"
 	"ProtoGraphicsLib/mesh.h"
 	"BatKernel/batcore.h"
 
-1450761300 c:\protocode\protographicslib\include\protographicslib\renderobject.h
+1452920631 c:\protocode\protographicslib\include\protographicslib\renderobject.h
 
 1452321488 c:\protocode\protographicslib\include\protographicslib\shader.h
 	"BatKernel/Resource/resource.h"
@@ -570,16 +574,16 @@
 
 1447222594 c:\protocode\protoengine\include\protoengine\gamecontext.h
 
-1452380372 source:c:\protocode\batapplication\src\controllers\objecttracer.cpp
+1453025004 source:c:\protocode\batapplication\src\controllers\objecttracer.cpp
 	"BatApplication/Controllers/objecttracer.h"
 
-1450574201 c:\protocode\batapplication\include\batapplication\controllers\objecttracer.h
+1453069346 c:\protocode\batapplication\include\batapplication\controllers\objecttracer.h
 
 1452377830 source:c:\protocode\batapplication\src\entity\renderedentity.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/Entity/renderedentity.h"
 
-1448749246 c:\protocode\batapplication\include\batapplication\precompiled.h
+1453106036 c:\protocode\batapplication\include\batapplication\precompiled.h
 	<iostream>
 	<string>
 	<fstream>
@@ -590,6 +594,7 @@
 	<map>
 	<stack>
 	<set>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -604,18 +609,18 @@
 
 1452377863 c:\protocode\batapplication\include\batapplication\entity\renderedentity.h
 
-1452752301 source:c:\protocode\batapplication\src\frontend.cpp
+1453100655 source:c:\protocode\batapplication\src\frontend.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/frontend.h"
 
-1452748624 c:\protocode\batapplication\include\batapplication\frontend.h
+1453087546 c:\protocode\batapplication\include\batapplication\frontend.h
 	"ProtoEngine\protoengine.h"
 
-1452757580 source:c:\protocode\batapplication\src\gameplay.cpp
+1453106000 source:c:\protocode\batapplication\src\gameplay.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/gameplay.h"
 
-1452756447 c:\protocode\batapplication\include\batapplication\gameplay.h
+1453088931 c:\protocode\batapplication\include\batapplication\gameplay.h
 	"BatApplication/Controllers/objecttracer.h"
 	"BatApplication/Player/character.h"
 	"BatApplication/Map/map.h"
@@ -627,11 +632,11 @@
 	"ProtoGraphicsLib/renderobject.h"
 	"BatApplication/Entity/renderedentity.h"
 
-1452376926 c:\protocode\batapplication\include\batapplication\map\map.h
+1453089494 c:\protocode\batapplication\include\batapplication\map\map.h
 
-1450770123 c:\protocode\batapplication\include\batapplication\player\playercontroller.h
+1453024879 c:\protocode\batapplication\include\batapplication\player\playercontroller.h
 
-1452756310 c:\protocode\batapplication\include\batapplication\map\entityfactory.h
+1452988957 c:\protocode\batapplication\include\batapplication\map\entityfactory.h
 	"BatApplication/Entity/renderedentity.h"
 
 1452753476 source:c:\protocode\batapplication\src\main.cpp
@@ -644,10 +649,12 @@
 	"State/GameContext.h"
 	"State/GameStates.h"
 
-1452757490 source:c:\protocode\batapplication\src\map\entityfactory.cpp
+1453108907 source:c:\protocode\batapplication\src\map\entityfactory.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/Map/entityfactory.h"
 	"BatApplication/Player/character.h"
+	"BatApplication/Player/playercontroller.h"
+	"BatApplication/Controllers/objecttracer.h"
 
 1452041882 source:c:\protocode\batapplication\src\map\jsonmaploader.cpp
 	"BatApplication/precompiled.h"
@@ -768,7 +775,7 @@
 	<utility>
 	"internal/stack.h"
 
-1452757502 source:c:\protocode\batapplication\src\map\map.cpp
+1453089490 source:c:\protocode\batapplication\src\map\map.cpp
 	"BatApplication/precompiled.h"
 	"ProtoGraphicsLib/mesh.h"
 	"BatApplication/Map/map.h"
@@ -783,7 +790,16 @@
 	"BatApplication/precompiled.h"
 	"BatApplication/Player/character.h"
 
-1450772268 source:c:\protocode\batapplication\src\playercontroller.cpp
+1453025099 source:c:\protocode\batapplication\src\playercontroller.cpp
 	"BatApplication/precompiled.h"
 	"BatApplication/Player/playercontroller.h"
+
+1452987758 c:\protocode\batkernel\include\batkernel\isystem.h
+	"Object.h"
+
+1453103966 c:\protocode\batkernel\include\batkernel\system.h
+	"Object.h"
+
+1453079271 c:\protocode\protographicslib\include\protographicslib\systems\rendersystem.h
+	"BatKernel/system.h"
 

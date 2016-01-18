@@ -17,12 +17,12 @@ class FrontEnd : public BaseState
         void MoveUp();
         void MoveDown();
 
-        RenderObject m_background;
-        RenderObject m_cursor;
         Camera m_cam;
 
         u32 m_CursorIndex;
         glm::vec3 m_CursorPositions[3];
+
+        Entity m_background;
         Entity m_Cursor;
 
         MatrixStack m_mStack;

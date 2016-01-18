@@ -13,7 +13,7 @@ class RenderObject : public IBatComponent
         virtual ~RenderObject();
 
         void Init();
-
+        Transform* p_Transform;
         Mesh* p_Mesh;
         Material* p_Material;
         glm::vec2 m_Offset;

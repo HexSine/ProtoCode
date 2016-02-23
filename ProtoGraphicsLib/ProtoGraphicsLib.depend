@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1447220205 source:c:\protocode\protographicslib\include\protographicslib\precompiled.h
+1453268434 source:c:\protocode\protographicslib\include\protographicslib\precompiled.h
 	<iostream>
 	<stdio.h>
 	<iostream>
@@ -11,6 +11,7 @@
 	<unordered_map>
 	<map>
 	<stack>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -482,7 +483,7 @@
 	"BatKernel/entity.h"
 	"BatKernel/system.h"
 
-1453098283 c:\protocode\batkernel\include\batkernel\common.h
+1455689402 c:\protocode\batkernel\include\batkernel\common.h
 
 1452416079 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -494,7 +495,7 @@
 
 1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
 
-1453083678 c:\protocode\batkernel\include\batkernel\ibatsystem.h
+1455513983 c:\protocode\batkernel\include\batkernel\ibatsystem.h
 	"BatKernel/ibatcomponent.h"
 
 1447223494 c:\protocode\batkernel\include\batkernel\ibatcomponent.h
@@ -505,7 +506,7 @@
 
 1452987816 c:\protocode\batkernel\include\batkernel\object.h
 
-1453087543 c:\protocode\batkernel\include\batkernel\entity.h
+1453106082 c:\protocode\batkernel\include\batkernel\entity.h
 	"BatKernel/object.h"
 	"BatKernel/system.h"
 
@@ -517,7 +518,7 @@
 	"ProtoGraphicsLib/texture.h"
 	"ProtoGraphicsLib/Systems/rendersystem.h"
 
-1453079892 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
+1455689939 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
 	"renderobject.h"
 	"ProtoGraphicsLib/shader.h"
 	"ProtoGraphicsLib/mesh.h"
@@ -543,7 +544,7 @@
 	"ProtoGraphicsLib/precompiled.h"
 	"ProtoGraphicsLib/camera.h"
 
-1447220205 c:\protocode\protographicslib\include\protographicslib\precompiled.h
+1453268434 c:\protocode\protographicslib\include\protographicslib\precompiled.h
 	<iostream>
 	<stdio.h>
 	<iostream>
@@ -555,6 +556,7 @@
 	<unordered_map>
 	<map>
 	<stack>
+	<unordered_set>
 	<math.h>
 	<assert.h>
 	<ctime>
@@ -617,12 +619,12 @@
 1447127792 source:c:\protocode\protographicslib\src\texture.cpp
 	"ProtoGraphicsLib/texture.h"
 
-1453098246 c:\protocode\batkernel\include\batkernel\system.h
+1453537592 c:\protocode\batkernel\include\batkernel\system.h
 	"Object.h"
 
-1453079271 c:\protocode\protographicslib\include\protographicslib\systems\rendersystem.h
+1455689923 c:\protocode\protographicslib\include\protographicslib\systems\rendersystem.h
 	"BatKernel/system.h"
 
-1453079309 source:c:\protocode\protographicslib\src\systems\rendersystem.cpp
+1453100864 source:c:\protocode\protographicslib\src\systems\rendersystem.cpp
 	"ProtoGraphicsLib\Systems\rendersystem.h"
 

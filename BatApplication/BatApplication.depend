@@ -492,7 +492,7 @@
 	"BatKernel/entity.h"
 	"BatKernel/system.h"
 
-1453103631 c:\protocode\batkernel\include\batkernel\common.h
+1456204854 c:\protocode\batkernel\include\batkernel\common.h
 
 1452416079 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -504,7 +504,7 @@
 
 1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
 
-1453083678 c:\protocode\batkernel\include\batkernel\ibatsystem.h
+1455513983 c:\protocode\batkernel\include\batkernel\ibatsystem.h
 	"BatKernel/ibatcomponent.h"
 
 1447223494 c:\protocode\batkernel\include\batkernel\ibatcomponent.h
@@ -515,7 +515,7 @@
 
 1452987816 c:\protocode\batkernel\include\batkernel\object.h
 
-1453106082 c:\protocode\batkernel\include\batkernel\entity.h
+1456204859 c:\protocode\batkernel\include\batkernel\entity.h
 	"BatKernel/object.h"
 	"BatKernel/system.h"
 
@@ -527,7 +527,7 @@
 	"ProtoGraphicsLib/texture.h"
 	"ProtoGraphicsLib/Systems/rendersystem.h"
 
-1453079892 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
+1455689939 c:\protocode\protographicslib\include\protographicslib\graphicssystem.h
 	"renderobject.h"
 	"ProtoGraphicsLib/shader.h"
 	"ProtoGraphicsLib/mesh.h"
@@ -639,7 +639,7 @@
 1452988957 c:\protocode\batapplication\include\batapplication\map\entityfactory.h
 	"BatApplication/Entity/renderedentity.h"
 
-1452753476 source:c:\protocode\batapplication\src\main.cpp
+1455689994 source:c:\protocode\batapplication\src\main.cpp
 	"BatApplication/precompiled.h"
 	"ProtoEngine/ProtoEngine.h"
 	"BatApplication/frontend.h"
@@ -797,9 +797,9 @@
 1452987758 c:\protocode\batkernel\include\batkernel\isystem.h
 	"Object.h"
 
-1453103966 c:\protocode\batkernel\include\batkernel\system.h
+1456204876 c:\protocode\batkernel\include\batkernel\system.h
 	"Object.h"
 
-1453079271 c:\protocode\protographicslib\include\protographicslib\systems\rendersystem.h
+1455689923 c:\protocode\protographicslib\include\protographicslib\systems\rendersystem.h
 	"BatKernel/system.h"
 

@@ -29,7 +29,19 @@ class System : public Object
 template <typename T>
 std::vector<T*> System::GetSystems()
 {
+    typeid_t tyt;
+    for(SystemMap::iterator iter = m_Systems.begin(); iter != m_Systems.end(); ++iter)
+    {
+        tyt = iter->first;
+        SystemVector vec = iter->second;
+        u32 c = vec.size();
+        vec = iter->second;
+    }
     typeid_t type = type_id<T>();
+    if(type == tyt)
+    {
+        printf("WAWAWA");
+    }
     SystemMap::iterator iter = m_Systems.find(type);
     if(iter != m_Systems.end())
     {

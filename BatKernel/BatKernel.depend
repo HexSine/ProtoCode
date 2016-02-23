@@ -40,7 +40,7 @@
 	"BatKernel/entity.h"
 	"BatKernel/system.h"
 
-1453103631 c:\protocode\batkernel\include\batkernel\common.h
+1456204854 c:\protocode\batkernel\include\batkernel\common.h
 
 1452416079 c:\protocode\batkernel\include\batkernel\resource\resourcemanager.hpp
 	<map>
@@ -52,7 +52,7 @@
 
 1427250847 c:\protocode\batkernel\include\batkernel\matrixstack.h
 
-1453083678 c:\protocode\batkernel\include\batkernel\ibatsystem.h
+1455513983 c:\protocode\batkernel\include\batkernel\ibatsystem.h
 	"BatKernel/ibatcomponent.h"
 
 1447223494 c:\protocode\batkernel\include\batkernel\ibatcomponent.h
@@ -63,7 +63,7 @@
 
 1452987816 c:\protocode\batkernel\include\batkernel\object.h
 
-1453106082 c:\protocode\batkernel\include\batkernel\entity.h
+1456204859 c:\protocode\batkernel\include\batkernel\entity.h
 	"BatKernel/object.h"
 	"BatKernel/system.h"
 
@@ -145,10 +145,10 @@
 	"BatKernel/entity.h"
 	"BatKernel/system.h"
 
-1453103966 c:\protocode\batkernel\include\batkernel\system.h
+1456204876 c:\protocode\batkernel\include\batkernel\system.h
 	"Object.h"
 
-1453074065 source:c:\protocode\batkernel\src\system.cpp
+1453108611 source:c:\protocode\batkernel\src\system.cpp
 	"BatKernel/precompiled.h"
 	"BatKernel/entity.h"
 	"BatKernel/system.h"

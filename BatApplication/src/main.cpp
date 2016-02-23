@@ -39,6 +39,13 @@ namespace Proto
     int nextState = 0;
     bool ProtoInitialize()
     {
+        typeid_t id = type_id<Texture>();
+
+        if(id == gSys.id)
+        {
+            printf("FFF");
+        }
+
         input.Initialize(app.GetWin());
         gSys.Initialize(&resSystem);
         currentState = new FrontEnd(gSys,input,resSystem,gameContext);

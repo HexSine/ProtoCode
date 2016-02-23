@@ -8,9 +8,18 @@ typedef unsigned int        u32;
 
 typedef float               f32;
 typedef double              f64;
-
+/*
 //Get unique ID's for classes
 using typeid_t = void const*;
+template <typename T>
+static typeid_t* type_id() noexcept
+{
+    static char const type_id{};
+    return &type_id;
+}
+*/
+using typeid_t = void const*;
+
 template <typename T>
 static typeid_t type_id() noexcept
 {

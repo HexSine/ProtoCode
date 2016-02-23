@@ -7,6 +7,7 @@ class Camera;
 class Mesh;
 class Material;
 
+
 class RenderSystem : public System
 {
     public:

@@ -16,6 +16,8 @@ class GraphicsSystem : public IBatGraphicsSystem
         GraphicsSystem();
         virtual ~GraphicsSystem();
 
+        //TODO Delete this
+        typeid_t id;
         virtual void DrawRenderObject(const System& target,glm::mat4 matrix);
         virtual bool Initialize(ResourceManager* resSystem);
         //virtual void DrawRenderObject(const RenderObject& target,glm::mat4 matrix);

@@ -11,6 +11,8 @@
 #include "ProtoGraphicsLib/Systems/rendersystem.h"
 GraphicsSystem::GraphicsSystem()
 {
+    //TODO Remove
+    id = type_id<Texture>();
     //ctor
 }
 

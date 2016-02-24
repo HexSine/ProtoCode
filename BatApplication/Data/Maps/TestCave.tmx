@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
- <tileset firstgid="1" name="CaveTile" tilewidth="32" tileheight="32" tilecount="64">
-  <image source="../Textures/Map/tileset_cave.png" width="256" height="256"/>
+ <tileset firstgid="1" name="CaveTile" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="../Textures/Map/tileset_cave.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="65" name="cave_decor" tilewidth="32" tileheight="32" tilecount="64">
+ <tileset firstgid="257" name="cave_decor" tilewidth="32" tileheight="32" tilecount="64">
   <image source="../Textures/Map/tileset_cave_decor.png" width="256" height="256"/>
  </tileset>
+ <layer name="BackGround" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0bEJACAMRNEbxxFcK/s3FpZiJ8TiBR6kPPiVpAAAAOChcfnRg9PMvu4d6PEjPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOiyAKosO+4=
+  </data>
+ </layer>
  <layer name="Tile Layer 2" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJztzjENAAAIA7Dd+BeMjAXSKmgCAAAAAABcNO0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8tcgjAAs=
+   eJzt1MkJAkEQhtG+uQXgFoBbAC6Tf15W4YiDeO5G+j34YI7N/FClAAAA/LdZNP/RIlpGq3ZP69K6fDbJDfL/H6NttIv27Z7WpUN0jW7RPRrKa49TdI4u7Z7Wne9bNb1R9qgvb9Vm0vRG2aO+vFPvLfJG5b3KDYbx+zF+AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQC1P4GIGbw==
+  </data>
+ </layer>
+ <layer name="backgroundDecor" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1MsKwjAQBdCOFtuq4G/0/7/QCSJK24WPRV/nwCUh2YQZMlXFHl3jszO+86xhWYf1nDoD2Dpzj61rMu1busw5c5nzUTvWT+QfZthy6c1vTuoGI+VfNOF/zCWy7odMF499yS1ed3XmqDfAStXmFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA6t0BLIIB2A==
   </data>
  </layer>
  <layer name="Tile Layer 1" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt2N1KhEAYBuBpq4O2O4g6iTrpl7a/+7+zRlxZMR0tJ3dinwdeWF0RmZdvQEPgv1sn8hTzHPMQ89hzvG6dT11/t/2fcakePmI+Y95i3nuOu+s+dP0m1J0wrtvFfdit45juuqdsZjzjIel28brfxzl4uiiLLsqSq4ujmFXMcYZ7HbJcc3EW6lk7z3Q/5tFHGS5jrmJOQt3HabBv7UPTw03Mbfj+HmNOlnMRdj2selLNij6WUXVxHdLfvdr7VhP7V35Tu+iLeclrqIvqfHuf0sffaq93X6bOiz5+56X1e87+pI+fa75xzE1qn9LHdM079RLRxzh9lEUfZdFHWfRRFn2URR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwJAvjssZlw==
+   eJzt1ctNAzEUBVALiV34hQqAEogoABAN0H8vmMUsiIiI58N1MudJZxNF0fO9srMtpWwX8Fk9jrDELueqJdenMm7uOjjnKbgfmW/r6EMfp+i/+ngo/ld66uPQuDf66Fm6j+EdS+fQi3Qfw+hlvj421VV1Xd1UtzP8ZjqXlMvqudqNzG3zy2dzdJLOJemteq9eJmY496RzSfsofXWSzqMH351Meb+WmHQmacP7dTGTqf2m8+jda+P39/tt7Sd93nM39HNsL+l9e9N6H1oc00v6/Gvz131J77dWh3pJ77V2+72k9+FnL+k9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaPcFhGupGA==
   </data>
  </layer>
  <layer name="decor" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt10EKgCAQAEC/ptn/v1TCClJBh6BIZkBccA8e1lVTAgBgFnkfNWbgbP16A1zKSd+CpsbsTPxDvU+B6elV7+r3w/jn875ldq3Wl4hrxL3+S8TlkJuHNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAJzbvYgd+
+   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
   </data>
  </layer>
 </map>
